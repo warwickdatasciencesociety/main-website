@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.dropbtn {
+  background-color: #FCF7F8;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 32px;
+  
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+
+  margin-top:20px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #F2F2F8;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.dropdown-content {
+  float: right;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-content > a {
+  background-color: #FCF7F8;
+  border: none;
+  color: black;
+  float: right;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 32px;
+  margin-top:20px;  
+
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+</style>
+</head>
+<body style="background-color: #274C77">
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class= "test" href="#home">Home</a>
+    <a class= "test" href="#about">About Us</a>
+    <a class= "test" href="#corevalues">Core Values</a>
+    <a class= "test" href="#ventures">Ventures</a>
+    <a class= "test" href="#ourteam">Our Team</a>
+    <a class= "test" href="#contact">Contact Us</a>
+  </div>
+</div>
+
+<script>
+
+$( document ).ready(function() {
+  $(document).click(function() {
+  $(".dropdown-content").slideUp(200);
+  });
+
+  $(".dropbtn").click(function() {
+    $(".dropdown-content").slideToggle(200);
+  });
+
+  $(".dropbtn").click(function(e) {
+    e.stopPropagation();
+    return false;
+  });
+
+  $(".test").click(function(e) {
+    e.stopPropagation();
+    return false;
+  });
+});
+
+</script>
+
+</body>
+</html>
