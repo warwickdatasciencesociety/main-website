@@ -93,3 +93,15 @@ hr {
   z-index: 10;
   margin:20px;
 }
+
+.tile {
+  margin:0;
+}
+
+.tile.is-vertical>.tile.is-child:not(:last-child) {
+  margin: 0!important;
+}
+
+.tile.is-parent {
+  padding: 0!important;
+}
