@@ -53,7 +53,9 @@
   cursor: pointer;
   border-radius: 32px;
   margin-top:20px;  
-
+  -webkit-box-shadow: 51px 51px 29px -29px rgba(0,0,0,0.75);
+  -moz-box-shadow: 51px 51px 29px -29px rgba(0,0,0,0.75);
+  box-shadow: 51px 51px 29px -29px rgba(0,0,0,0.75);
 }
 
 
@@ -63,3 +65,31 @@
 
 }
 .dropdown a:hover {background-color: #ddd;}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.ourteam-style {
+  background-color: #fafafa;
+}
+
+.card-wdss {
+  min-height: 40vh;
+
+}
+@media (min-width: 700px) {
+  .hidden-ss {
+    display: none !important;
+  }
+}
+
+.logo {
+  position: fixed;
+  z-index: 10;
+  margin:20px;
+}
