@@ -1,174 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hello Bulma!</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="css/onepage-scroll.css">
 
-  html {
-  scroll-behavior: smooth;
-} 
-.dropbtn {
-  background-color: #FCF7F8;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 32px;
-  
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 32px;
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <style>
+    #home {
+      background-image: url("section1background.jfif");
+      background-size: cover;
 
-  margin-top:20px;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #F2F2F8;
-}
-
-.dropdown {
-  right: 0;
-  position: fixed;
-  display: inline-block;
-  margin: 10px;
-  z-index:99;
-}
-
-
-.dropdown-content2 {
-  float: right;
-  position: absolute;
-  min-width: 160px;
-  overflow: auto;
-  right: 0;
-  z-index: 1;
-  display: none;
-}
-
-.test {
-  background-color: #FCF7F8;
-  border: none;
-  color: black;
-  float: right;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 32px;
-  margin-top:20px;  
-
-}
-.container2{ 
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  
-}
-.next {
-  scroll-snap-align: center;
-
-
-}
-.dropdown a:hover {background-color: #ddd;}
-
-</style>
+    }
+  </style>
 </head>
-<body style="background-color: #274C77">
 
-<div class="dropdown">
-  <button class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content2">
-    <a class= "test" href="#home">Home</a>
-    <a class= "test" href="#about">About Us</a>
-    <a class= "test" href="#corevalues">Core Values</a>
-    <a class= "test" href="#ventures">Ventures</a>
-    <a class= "test" href="#ourteam">Our Team</a>
-    <a class= "test" href="#contact">Contact Us</a>
-  </div>
-</div>
+<body>
 
-
-<div class="container2">
-<section id="home" class="hero is-success is-fullheight next">
-  <img src=""
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Warwick Data Science Society
-      </h1>
-      <h1 class="subtitle">
-        Sharing the pwoer of data science with students from all disiplines 
-      </h1>
-     
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content2">
+      <a id="homebtn" class="test" href="#home">Home</a>
+      <a id="about" class="test" href="#about">About Us</a>
+      <a id="core" class="test" href="#corevalues">Core Values</a>
+      <a id="ventures" class="test" href="#ventures">Ventures</a>
+      <a id="team" class="test" href="#ourteam">Our Team</a>
+      <a id="contact" class="test" href="#contact">Contact Us</a>
     </div>
   </div>
-</section>
+  <div class="main">
+    <section id="home" class="hero is-success is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Warwick Data Science Society
+          </h1>
+          <h1 class="subtitle">
+            Sharing the power of data science with students from all disiplines
+          </h1>
 
-<section id="about" class="hero is-warning is-fullheight next">
-  <a name="about"></a>
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        About Us
-      </h1>
-      
-    </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="hero  is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            About Us
+          </h1>
+          DSS is a student-led society at the University of Warwick, dedicated to spreading the word of data science to students of
+          all backgrounds, without any of the hype. Through our talks, teaching, research, and many other ventures, we aim
+          to help students build practical understanding and experience of data science. Our goal is to create a community
+          of passionate individuals who can work together, combining data scientific techniques with domain knowledege, to
+          solve the problems students care about.
+
+        </div>
+        <div class="container">
+          <img src="about.jpg">
+        </div>
+      </div>
+    </section>
+
+    <section id="corevalues" class="hero is-success is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Core Values
+          </h1>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="ventures" class="hero is-warning is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Ventures
+          </h1>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="ourteam" class="hero is-success is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Our Team
+          </h1>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="hero is-warning is-fullheight next">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Contact Us
+          </h1>
+
+        </div>
+      </div>
+    </section>
+
   </div>
-</section>
 
-<section id="corevalues" class="hero is-success is-fullheight next">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Core Values
-      </h1>
-    
-    </div>
-  </div>
-</section>
-</div>
-
-<script>
-
-$( document ).ready(function() {
-  // $(document).click(function() {
-  // $(".dropdown-content2").slideUp(200);
-  // });
-
-  $(".dropbtn").click(function() {
-    $(".dropdown-content2").slideToggle(200);
-  });
-
-  // $(".dropbtn").click(function(e) {
-  //   e.stopPropagation();
-  //   return false;
-  // });
-
-  // $(".test").click(function(e) {
-  //   e.stopPropagation();
-  //   return false;
-  // });
-  // $(window).scroll(function() {
-  //   // $('html,body').animate({ scrollTop:$(this).parent().next().offset().top}, 'slow');
-  //   var cls = $(this).closest(".next");
-  //   console.log(cls);
-  //   //.next().offset().top;
-	// 	$("html, body").animate({scrollTop: cls}, "slow");
-  // });
-});
+  <script type="text/javascript" src="js/main.js"></script>
 
 
-
-</script>
 
 </body>
+
 </html>
