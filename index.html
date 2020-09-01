@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b0e45b6dae.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
@@ -28,9 +28,25 @@
 </head>
 
 <body>
-  <figure class="image is-64x64 logo">
-    <img src="img/logo-transparent.png">
-  </figure>
+  <article class="media page-title curr-page-title">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="img/logo-transparent.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p class="curr-title title is-2">
+          About Us
+        </p>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  </div>
   <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div id="myDropdown" class="dropdown-content2">
@@ -59,16 +75,17 @@
 
     <section id="about" class="hero  is-fullheight next">
       <div class="hero-body">
-        <div class="container">
+        <div class="container is-fluid">
+          <h1 class="title is-2">
+            About Us
+          </h1>
           <div class="columns is-multiline" data-v-15d98976="">
             <div class="column">
-              <h1 class="title">
-                About Us
-              </h1>
-              WiDSS is a student-led society at the University of Warwick, dedicated to spreading the word of data science to students
-              of all backgrounds, without any of the hype. Through our talks, teaching, research, and many other ventures,
-              we aim to help students build practical understanding and experience of data science. Our goal is to create
-              a community of passionate individuals who can work together, combining data scientific techniques with domain
+
+              WDSS is a student-led society at the University of Warwick, dedicated to spreading the word of data science to students of
+              all backgrounds, without any of the hype. Through our talks, teaching, research, and many other ventures, we
+              aim to help students build practical understanding and experience of data science. Our goal is to create a
+              community of passionate individuals who can work together, combining data scientific techniques with domain
               knowledege, to solve the problems students care about.s
 
             </div>
@@ -86,33 +103,46 @@
 
     <section id="corevalues" class="hero  is-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title is-2">
-            Core Values
-          </h1>
+        <div class="banner container is-fluid">
+          <br>
 
-          <div class="columns is-multiline" data-v-15d98976="">
-            <div class="column is-half-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <p class="title is-5">Data Science Democracy</p>
+          <div class=" columns is-multiline" data-v-15d98976="">
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/raise-hand.svg">
+
+              <p class="title is-5 has-text-white">Data Science Democracy</p>
               All subjects stand to benefit from data science and should be supported and inspired as they learn about the field​
             </div>
-            <div class="column is-half-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <p class="title is-5">Cutting out the Hype</p>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/balance.svg">
+
+              <p class="title is-5 has-text-white">Cutting out the Hype</p>
               The power of data science can be shared without relying on hype or shady tactics​
 
             </div>
-            <div class="column is-half-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <p class="title is-5">Inclusivity as a Driving Force</p>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/together.svg">
+
+              <p class="title is-5 has-text-white">Inclusivity as a Driving Force</p>
               We value inclusion and undertake active measures to ensure that we have a diverse membership​
 
             </div>
-            <div class="column is-half-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <p class="title is-5">No Fear of the Technical</p>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/technical-support.svg">
+
+              <p class="title is-5 has-text-white">No Fear of the Technical</p>
               We do not shy away from the ugly, technical sides of data science, aiming to portray a full picture of the field​
 
             </div>
-            <div class="column is-half-desktop is-12-mobile is-3-tablet">
-              <p class="title is-5">Giving Back to the Community</p>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet">
+
+              <img src="img/svg/heart.svg">
+
+              <p class="title is-5 has-text-white">Giving Back to the Community</p>
               Through DSSG and opening sourcing material we aim to support those that can benefit from our experience​
 
             </div>
@@ -125,57 +155,76 @@
 
     <section id="ventures" class="hero  is-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
+        <div class="container is-fluid">
+          <h1 class="title is-2">
             Ventures
           </h1>
           <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
+            <div class="tile is-vertical is-12">
               <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-primary">
-                    <p class="title">Research </p>
-                    <p class="subtitle">Top tile</p>
+                <div id="research-tile-image" class="tile is-parent is-vertical">
+                  <article id="research-tile" class="tile is-child notification ">
+
+                    <p class="title is-3"> RESEARCH</p>
+                    <p class="subtitle">
+                      We bring together students from a wide range of disciplines to particiapte in interdisciplenary research
+                      <br>
+                      <a href="#">Learn More</a>
+                    </p>
+
                   </article>
-                  <article class="tile is-child notification is-warning">
-                    <p class="title">Podcast</p>
-                    <p class="subtitle">Bottom tile</p>
-                  </article>
+
                 </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-info">
-                    <p class="title">More Research</p>
-                    <p class="subtitle">With an image</p>
-                    <figure class="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/640x480.png">
-                    </figure>
+
+                <div id="teaching-tile-image" class="tile is-parent">
+                  <article id="teaching-tile" class="tile is-child notification is-success">
+                    <div class="content">
+                      <p class="title is-3">TEACHING</p>
+                      <div class="content">
+                        <!-- Content -->
+                      </div>
+                    </div>
                   </article>
                 </div>
               </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-danger">
-                  <p class="title">Talks</p>
-                  <p class="subtitle">Aligned with the right tile</p>
-                  <div class="content">
-                    <!-- Content -->
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-success">
-                <div class="content">
-                  <p class="title">Careers</p>
-                  <p class="subtitle">With even more content</p>
-                  <div class="content">
-                    <!-- Content -->
-                  </div>
-                </div>
-              </article>
+
             </div>
           </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+
+
+                <div id="podcast-tile-image" class="tile is-parent">
+                  <article id="podcast-tile" class="tile is-child notification is-info">
+                    <p class="title is-3">PODCAST</p>
+                  </article>
+                </div>
+
+                <div id="careers-tile-image" class="tile is-parent">
+                  <article id="careers-tile" class="tile is-child notification is-info">
+                    <p class="title is-3">CAREERS</p>
+                  </article>
+                </div>
+
+                <div id="social-good-tile-image" class="tile is-parent is-vertical">
+                  <article id="social-good-tile" class="tile is-child notification is-danger">
+                    <p class="title is-3">SOCIAL GOOD</p>
+
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
         </div>
-      </div>
     </section>
 
     <section id="ourteam" class="ourteam-style hero  is-fullheight next ">
@@ -367,23 +416,87 @@
       </div>
     </section>
 
-    <section id="contact" class="hero is-warning is-fullheight next">
+    <section id="contact" class="herois-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Contact Us
-          </h1>
+        <div class="container is-fluid">
 
+          <div class="b columns has-text-centered is-desktop  is-centered is-vcentered ">
+            <div class="column ">
+              <h1 class="title is-2 is-size-3-mobile  has-text-white">
+                Contact
+              </h1>
+              <a href="https://www.linkedin.com/company/warwickdatasciencesociety/">
+                <p class="is-size-4 is-size-5-mobile">
+                  General </p>
+              </a>
+
+              <a href="https://www.facebook.com/warwickdatasciencesociety">
+                <p class="is-size-4 is-size-5-mobile">
+                  Research </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile">
+                  Outreach </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile">
+                  Teaching </p>
+              </a>
+            </div>
+            <div class="column">
+              <h1 class="title is-2 is-size-3-mobile has-text-white">
+                Follow Us
+              </h1>
+              <a href="https://www.facebook.com/warwickdatasciencesociety">
+                <p class="is-size-4 is-size-5-mobile">
+                  <i class="fab fa-facebook linkedin-blue"></i> Facebook </p>
+              </a>
+              <a href="https://www.linkedin.com/company/warwickdatasciencesociety/">
+                <p class="is-size-4 is-size-5-mobile">
+                  <i class="fab fa-linkedin linkedin-blue"></i> LinkedIn </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile">
+                  <i class="fab fa-instagram linkedin-blue"></i> Instagram </p>
+              </a>
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile">
+                  <i class="fab fa-youtube linkedin-blue"></i> YouTube </p>
+              </a>
+            </div>
+            <div class="column">
+              <h1 class="title is-2 is-size-3-mobile has-text-white">
+                Get Involved
+              </h1>
+              <p class="is-size-4 is-size-5-mobile"> Membership </p>
+              <p class="is-size-4 is-size-5-mobile"> Community </p>
+              <p class="is-size-4 is-size-5-mobile"> Team Vacancies </p>
+              <p class="is-size-4 is-size-5-mobile"> Code of Conduct </p>
+
+            </div>
+          </div>
+
+          <div>Icons made by
+            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+          </div>
+          Icons made by
+          <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         </div>
       </div>
     </section>
 
-  </div>
+    </div>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/glide.js"></script>
-
-  <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/glide.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
 
 
 </body>
