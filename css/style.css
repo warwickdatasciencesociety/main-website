@@ -64,6 +64,19 @@
   background-size: cover;
 
 }
+
+#corevalues {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#ourteam {
+  background-color: #161616;
+
+}
 .dropdown a:hover {background-color: #ddd;}
 hr {
   display: block;
@@ -221,4 +234,29 @@ hr {
     font-size: 10px;
  
   }
+}
+
+.banner {
+  background: rgba(255,255,255,0.4);
+  top: 20vh;
+  color: white!important;
+  padding-bottom: 3vh;
+}
+
+.banner title {
+  color: white!important;
+}
+
+@media (max-width: 770px) {
+    .banner {
+      top:0vh;
+      
+    }
+    #corevalues {
+      overflow: scroll;
+    }
+    .banner img {
+      display: none;
+    }
+    
 }
