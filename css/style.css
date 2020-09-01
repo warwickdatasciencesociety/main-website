@@ -73,9 +73,9 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-#ourteam {
+#contact {
   background-color: #161616;
-
+  
 }
 .dropdown a:hover {background-color: #ddd;}
 hr {
@@ -199,7 +199,7 @@ hr {
 }
 
 #social-good-tile-image {
-  background-image: url("../img/ventures/research.jpg");
+  background-image: url("../img/ventures/socialgood.jpg");
   background-size: cover;
 }
 
@@ -259,4 +259,8 @@ hr {
       display: none;
     }
     
+}
+
+.b {
+  top:40vh;
 }
