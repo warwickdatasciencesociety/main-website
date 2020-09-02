@@ -253,7 +253,7 @@
         });
 
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-          event.preventDefault();
+          document.addEventListener('mousewheel DOMMouseScroll MozMousePixelScroll', e => e.preventDefault(), { passive: false });
           var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
           init_scroll(event, delta);
         });
@@ -266,7 +266,7 @@
         var timeNow = new Date().getTime();
         // Cancel scroll if currently animating or within quiet period
         if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
-            event.preventDefault();
+          document.addEventListener('mousewheel DOMMouseScroll MozMousePixelScroll', e => e.preventDefault(), { passive: false });
             return;
         }
 
@@ -372,7 +372,7 @@
 
 
     $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-      event.preventDefault();
+      document.addEventListener('mousewheel DOMMouseScroll MozMousePixelScroll', e => e.preventDefault(), { passive: false });
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       if(!$("body").hasClass("disabled-onepage-scroll")) init_scroll(event, delta);
     });

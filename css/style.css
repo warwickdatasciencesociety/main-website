@@ -13,8 +13,8 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 32px;
-
-  margin-top:20px;
+  margin-right: 1vh;
+  margin-top:15vh;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -38,6 +38,7 @@
   right: 0;
   z-index: 1;
   display: none;
+  margin-right: 1vh;
 }
 
 .test {
@@ -73,7 +74,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-#contact {
+#contact-section {
   background-color: #161616;
   
 }
@@ -133,7 +134,9 @@ hr {
 .curr-page-title {
   z-index: 100;
 }
-
+.curr-title {
+  margin-top: 1vh;
+}
 #research-tile {
 
   background: rgb(2,0,36);
@@ -263,4 +266,8 @@ hr {
 
 .b {
   top:40vh;
+}
+
+a p{
+  text-decoration: none;
 }

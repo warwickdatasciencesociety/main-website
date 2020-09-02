@@ -1,7 +1,5 @@
 $(document).ready(function () {
-      function callback() {
-        console.log("test");
-      }
+
       $(".test").click(function() {
         $(".curr-title").html($(this).html());
       })
@@ -41,7 +39,41 @@ $(document).ready(function () {
         animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
         pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
         updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-        beforeMove: callback(),  // This option accepts a callback function. The function will be called before the page moves.
+        beforeMove: function (index) { 
+          switch (index) {
+            case 1:
+              $(".curr-title").html("");
+              $("#wdss-logo").attr("src", "img/logo-transparent.png");
+              break;
+            case 2:
+              $(".curr-title").html("About Us");
+              $(".curr-title").removeClass("has-text-white");
+              $("#wdss-logo").attr("src", "img/logo-transparent.png");
+              break;
+            case 3:
+              $(".curr-title").html("Core Values");
+              $(".curr-title").addClass("has-text-white");
+              $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
+              break;
+            case 4:
+              $(".curr-title").html("Ventures");
+              $(".curr-title").removeClass("has-text-white");
+              $("#wdss-logo").attr("src", "img/logo-transparent.png");
+              break;
+            case 5:
+              $(".curr-title").html("Our Team");
+              $(".curr-title").removeClass("has-text-white");
+              $("#wdss-logo").attr("src", "img/logo-transparent.png");
+              break;
+            case 6:
+              $(".curr-title").html("Connect With Us");
+              $(".curr-title").addClass("has-text-white");
+              $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
+              // $(".curr-title").addClass("is-3-mobile");
+              break;
+          }
+         
+        },  // This option accepts a callback function. The function will be called before the page moves.
         afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
         loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
         keyboard: true,                  // You can activate the keyboard controls
