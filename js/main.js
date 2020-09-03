@@ -12,32 +12,43 @@ $(document).ready(function () {
   function getPageTitle(index) {
     switch (index) {
       case 1:
-        $(".curr-title").html("");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("").fadeIn(500)
+        });
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 2:
-        console.log("??");
-        $(".curr-title").html("About Us");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("About Us").fadeIn(500)
+        });
         $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 3:
-        $(".curr-title").html("Core Values");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("Core Values").fadeIn(500)
+        });
         $(".curr-title").addClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         break;
       case 4:
-        $(".curr-title").html("Ventures");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("Ventures").fadeIn(500)
+        });
         $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 5:
-        $(".curr-title").html("Our Team");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("Our Team").fadeIn(500)
+        });  
         $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 6:
-        $(".curr-title").html("Connect With Us");
+        $(".curr-title").fadeOut(function() {
+          $(this).html("Connect With Us").fadeIn(500)
+        });
         $(".curr-title").addClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         // $(".curr-title").addClass("is-3-mobile");
