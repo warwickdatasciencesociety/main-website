@@ -1,7 +1,7 @@
 
 
 .dropbtn {
-  background-color: #FCF7F8;
+  background-color: #e0e0e0;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -18,9 +18,15 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #F2F2F8;
+  background-color: #c2c2c2;
 }
 
+#home-title {
+  /* display: none; */
+}
+:root {
+  --animate-delay: 0.1s;
+}
 .dropdown {
   right: 0;
   position: fixed;
@@ -42,7 +48,7 @@
 }
 
 .test {
-  background-color: #FCF7F8;
+  background-color: #e0e0e0;
   border: none;
   color: black;
   float: right;
@@ -88,7 +94,7 @@ canvas{
   background-color: #161616;
   
 }
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: #c2c2c2;}
 hr {
   display: block;
   height: 1px;
@@ -143,6 +149,10 @@ hr {
 
 .curr-page-title {
   z-index: 100;
+}
+
+#wdss-logo {
+  margin-top: 0.5vh;
 }
 .curr-title {
   margin-top: 1vh;

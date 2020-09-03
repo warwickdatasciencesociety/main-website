@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+  // $("#home").addClass(" animate__animated");
+  // $("#home").addClass("animate__slideInRight");
+  // setTimeout(function(){
+  //   $("#home-title").addClass("animate__animated");
+  //   $("#home-title").addClass("animate__fadeIn");
+
+  // }, 100); 
+  
+
   function getPageTitle(index) {
     switch (index) {
       case 1:
