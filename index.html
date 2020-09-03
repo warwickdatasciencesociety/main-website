@@ -2,27 +2,54 @@
 <html>
 
 <head>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="css/onepage-scroll.css">
-
+  <link rel="stylesheet" href="css/glide/glide.core.min.css">
+  <link rel="stylesheet" href="css/glide/glide.theme.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b0e45b6dae.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <title>WDSS</title>
   <style>
     #home {
-      background-image: url("section1background.jfif");
+      background-image: url("img/section1background.jfif");
       background-size: cover;
 
     }
+
+
   </style>
 </head>
 
 <body>
+  <article class="media page-title curr-page-title">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img id="wdss-logo" src="img/logo-transparent-white.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p class="curr-title title is-2">
+          
+        </p>
+      </div>
 
+    </div>
+
+  </article>
+
+
+  </div> 
   <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div id="myDropdown" class="dropdown-content2">
@@ -35,13 +62,13 @@
     </div>
   </div>
   <div class="main">
-    <section id="home" class="hero is-success is-fullheight next">
+    <section id="home" class="ourteam-style hero  is-fullheight next animate__animated  animate__slideInRight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
+          <h1 class="title is-1 has-text-white animate__animated  animate__fadeInLeft  animate__delay-1s">
             Warwick Data Science Society
           </h1>
-          <h1 class="subtitle">
+          <h1 class="subtitle has-text-white animate__animated  animate__fadeInUp  animate__delay-2s">
             Sharing the power of data science with students from all disiplines
           </h1>
 
@@ -49,73 +76,426 @@
       </div>
     </section>
 
-    <section id="about" class="hero  is-fullheight next">
+    <section id="about" class="ourteam-style hero  is-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            About Us
-          </h1>
-          WiDSS is a student-led society at the University of Warwick, dedicated to spreading the word of data science to students of
-          all backgrounds, without any of the hype. Through our talks, teaching, research, and many other ventures, we aim
-          to help students build practical understanding and experience of data science. Our goal is to create a community
-          of passionate individuals who can work together, combining data scientific techniques with domain knowledege, to
-          solve the problems students care about.s
+        <div class="container is-fluid">
+     
+          <div class="columns is-multiline" data-v-15d98976="">
+            <div class="column is-1"></div>
+            <div class="column is-4">
+              <p class="is-size-3-desktop is-size-5-widescreen">
+              WDSS is a student-led society at the University of Warwick, dedicated to spreading the word of data science to students of
+              all backgrounds, without any of the hype. Through our talks, teaching, research, and many other ventures, we
+              aim to help students build practical understanding and experience of data science. Our goal is to create a
+              community of passionate individuals who can work together, combining data scientific techniques with domain
+              knowledege, to solve the problems students care about.
+            </p>
+            </div>
+            <div class="column">
+              <div class="container">
+                <img src="img/about.jpg">
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="container">
-          <img src="about.jpg">
+
+      </div>
+    </section>
+
+    <section  id="corevalues" class="ourteam-style hero   is-fullheight next">
+
+      <div class="hero-body"> 
+        <div class="banner container is-fluid ">
+          <br>
+
+          <div class=" columns is-multiline" data-v-15d98976="">
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+              <figure class="image">
+              <img src="img/svg/raise-hand.svg">
+              </figure>
+              <p class="title  is-size-5 is-size-6-mobile has-text-white">Data Science Democracy</p>
+              All subjects stand to benefit from data science and should be supported and inspired as they learn about the field​
+            </div>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/balance.svg">
+
+              <p class="title  is-size-5 is-size-6-mobile has-text-white">Cutting out the Hype</p>
+              The power of data science can be shared without relying on hype or shady tactics​
+
+            </div>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/together.svg">
+
+              <p class="title is-5 has-text-white">Inclusivity as a Driving Force</p>
+              We value inclusion and undertake active measures to ensure that we have a diverse membership​
+
+            </div>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
+
+              <img src="img/svg/technical-support.svg">
+
+              <p class="title  is-size-5 is-size-6-mobile has-text-white">No Fear of the Technical</p>
+              We do not shy away from the ugly, technical sides of data science, aiming to portray a full picture of the field​
+
+            </div>
+            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet">
+
+              <img src="img/svg/heart.svg">
+
+              <p class="title  is-size-5 is-size-6-mobile has-text-white">Giving Back to the Community</p>
+              Through DSSG and opening sourcing material we aim to support those that can benefit from our experience​
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="corevalues" class="hero is-success is-fullheight next">
+    <section id="ventures" class="ourteam-style hero   is-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Core Values
-          </h1>
+        <div class="container is-fluid">
+    
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+                <div id="research-tile-image" class="tile is-parent is-vertical">
+                  <article id="research-tile" class="tile is-child notification ">
+
+                    <p class="title is-3"> RESEARCH</p>
+                    <p class="is-size-4 is-size-6-mobile">
+                      We bring together students from a wide range of disciplines to particiapte in interdisciplenary research
+                      <br>
+                      <a href="https://research.warwickdatascience.com/">Learn More</a>
+                    </p>
+
+                  </article>
+
+                </div>
+
+                <div id="teaching-tile-image" class="tile is-parent">
+                  <article id="teaching-tile" class="tile is-child notification is-success">
+                    <div class="content">
+                      <p class="title is-3">TEACHING</p>
+                      <div class="content">
+                        <!-- Content -->
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-12">
+              <div class="tile">
+
+                <div id="podcast-tile-image" class="tile is-parent">
+                  <article id="podcast-tile" class="tile is-child notification is-info">
+                      <a href="https://podcast.warwickdatascience.com/">
+                        <p class="title is-3">PODCAST</p>
+                      </a>
+                    </article>
+                </div>
+
+                <div id="careers-tile-image" class="tile is-parent">
+                  <article id="careers-tile" class="tile is-child notification is-info">
+                    <p class="title is-3">CAREERS</p>
+                  </article>
+                </div>
+
+                <div id="social-good-tile-image" class="tile is-parent is-vertical">
+                  <article id="social-good-tile" class="tile is-child notification is-danger">
+                    <p class="title is-3">SOCIAL GOOD</p>
+
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div><body>
+
+        
+    </section>
+
+    <section id="ourteam" class="ourteam-style hero  is-fullheight next ">
+      <div class="hero-body">
+        <div class="container  is-fluid">
+ 
+
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/janique.jpg">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Janique Krasnowska</p>
+                          <p class="subtitle">Research Officer</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+
+
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/tim.png">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Tim
+                            <br class="hidden-ss">Hargreaves</p>
+                          <p class="subtitle">President</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/tim-hargreaves/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/ciaran.jpg">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Ciaran
+                            <br class="hidden-ss"> Evans</p>
+                          <p class="subtitle">Vice President</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/ciaran-evans-9226b3186/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/yasser.png" class="responsive-img circle">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Yasser Quershi</p>
+                          <p class="subtitle">Outreach &#38; Talks Officer</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/yasser-qureshi/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/srinivas.jpg" class="responsive-img circle">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Srinivas
+                            <br class="hidden-ss"> Billa</p>
+                          <p class="subtitle">Marketing</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/srinivasbilla/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+                            <img src="img/team/bhav.jpg" class="responsive-img circle">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Bhavik
+                            <br class="hidden-ss"> Makwana</p>
+                          <p class="subtitle">Web Developer</p>
+                          <hr>
+                          <a href="https://www.linkedin.com/in/bhavik-m-536442161/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="glide__slide">
+
+
+                  <div class="row">
+                    <div class="column is-12">
+
+                      <div class="card card-wdss">
+                        <div class="card-image">
+                          <figure class="image is-1by1">
+
+                            <img src="img/team/brandusa.jpg" class="responsive-img circle">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-4">Brandusa Draghici</p>
+                          <p class="subtitle">Treasurer</p>
+                          <hr>
+
+                          <a href="https://www.linkedin.com/in/brandusa-draghici-5b0a84147/">
+                            <i class="fab fa-linkedin linkedin-blue"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <section id="ventures" class="hero is-warning is-fullheight next">
+    <section id="contact-section" class="ourteam-style hero  is-fullheight next">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Ventures
-          </h1>
+        <div class="container is-fluid">
 
-        </div>
+          <div class="b columns has-text-white has-text-centered is-desktop  is-centered is-vcentered ">
+            <div class="column is-3 ">
+              <h1 class="title is-2 is-size-3-mobile  has-text-white">
+                Contact
+              </h1>
+              <a href="https://www.linkedin.com/company/warwickdatasciencesociety/">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  General </p>
+              </a>
+
+              <a href="https://www.facebook.com/warwickdatasciencesociety">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  Research </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  Outreach </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  Teaching </p>
+              </a>
+            </div>
+            <div class="column is-3">
+              <h1 class="title is-2 is-size-3-mobile has-text-white">
+                Follow Us
+              </h1>
+              <a href="https://www.facebook.com/warwickdatasciencesociety">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  <i class="fab fa-facebook linkedin-blue"></i> Facebook </p>
+              </a>
+              <a href="https://www.linkedin.com/company/warwickdatasciencesociety/">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  <i class="fab fa-linkedin linkedin-blue"></i> LinkedIn </p>
+              </a>
+
+              <a href="https://www.instagram.com/warwick_data_science/">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  <i class="fab fa-instagram linkedin-blue"></i> Instagram </p>
+              </a>
+              <a href="https://www.youtube.com/channel/UCIsrd9wsNF5blsacM7f6GqA">
+                <p class="is-size-4 is-size-5-mobile has-text-white">
+                  <i class="fab fa-youtube linkedin-blue"></i> YouTube </p>
+              </a>
+            </div>
+            <div class="column is-3">
+              <h1 class="title is-2 is-size-3-mobile has-text-white">
+                Get Involved
+              </h1>
+              <p class="is-size-4 is-size-5-mobile has-text-white"> Membership </p>
+              <p class="is-size-4 is-size-5-mobile has-text-white"> Community </p>
+              <p class="is-size-4 is-size-5-mobile has-text-white"> Team Vacancies </p>
+              <p class="is-size-4 is-size-5-mobile has-text-white"> Code of Conduct </p>
+
+            </div>
+          </div>
+
+          <!-- <div>Icons made by
+            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+          </div>
+          Icons made by
+          <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </div> -->
       </div>
     </section>
 
-    <section id="ourteam" class="hero is-success is-fullheight next">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Our Team
-          </h1>
+    </div>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="hero is-warning is-fullheight next">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Contact Us
-          </h1>
-
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/glide.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
 
 
 </body>
