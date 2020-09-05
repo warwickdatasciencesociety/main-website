@@ -45,6 +45,12 @@
   display: none;
 }
 
+#venture-research-contents, #venture-teaching-contents,
+#venture-podcast-contents, #venture-careers-contents,
+#venture-social-good-contents {
+  display: none;
+}
+
 .test {
   background-color: #e0e0e0;
   border: none;
@@ -71,6 +77,7 @@
 }
 
 
+
 #contact-section {
   background-color: #161616;
   
@@ -92,7 +99,7 @@ hr {
 .card-wdss {
   min-height: 40vh;
   background-color: #28458f; 
-  box-shadow: none;
+
 }
 
 .card-fa {
@@ -159,8 +166,7 @@ hr {
 
 #research-tile-image {
   background-image: url("../img/ventures/research.jpg");
-  background-size: cover;  background-attachment:fixed; 
-
+  background-size: cover;
 }
 
 
@@ -188,8 +194,6 @@ hr {
 #teaching-tile-image {
   background-image: url("../img/ventures/teaching.jpg");
   background-size: cover;
-  background-attachment:initial; 
-
 }
 
 #podcast-tile {
@@ -204,9 +208,7 @@ hr {
 
 #podcast-tile-image {
   background-image: url("../img/ventures/podcast.jpeg");
-  background-size: cover;  
-  background-attachment:initial; 
-
+  background-size: cover;
 }
 
 #social-good-tile {
@@ -221,8 +223,7 @@ hr {
 
 #social-good-tile-image {
   background-image: url("../img/ventures/socialgood.jpg");
-  background-size: cover;  
-  background-attachment:initial;
+  background-size: cover;
 }
 
 #careers-tile {
@@ -238,9 +239,7 @@ hr {
 
 #careers-tile-image {
   background-image: url("../img/ventures/careers.jpeg");
-  background-size: cover;  
-  background-attachment:initial; 
-
+  background-size: cover;
 }
 
 .tile {
@@ -357,6 +356,7 @@ a p{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  margin-bottom: 20px;
 
 }
 @media (min-width:320px)  { 
@@ -388,6 +388,10 @@ a p{
   #careers-tile-image {
     background-image: radial-gradient(circle, rgba(0,155,255, 0.5) 0%, rgba(148,148,233,0.5) 89%), url("../img/ventures/careers.jpeg");
     background-size: cover;
+  }
+
+  .value-icons {
+    display: none;
   }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
@@ -426,11 +430,23 @@ a p{
     background-image: url("../img/ventures/careers.jpeg");
     background-size: cover;
   }
+
+  
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  .value-icons {
+    display: block;
+    margin-bottom: 3em;
+    
+
+  }
+  .value-icons>img {
+    height: 10vh;   
+    -webkit-filter: drop-shadow(00px 0px 7px rgba(25, 16, 153, 0.7));
+    filter: drop-shadow(0px 0px 7px rgba(25, 16, 153, 0.6));
+  }}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
-
 
 
 

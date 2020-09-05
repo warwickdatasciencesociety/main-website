@@ -1,27 +1,5 @@
 $(document).ready(function () {
 
-  var glide = new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 3,
-    autoplay: 1000,
-    dragThreshold: 1,
-    breakpoints: {
-      1023: {
-        perView: 2,
-      },
-      760: {
-      perView: 1,
-      }
-    }
-  }).mount()
-  
-  if ($(".curr-title").text() == "Our Team") {
-    glide.pause();
-  }
-  else {
-    glide.play();
-  }
 
   var acc = document.getElementsByClassName("accordion");
   var i;
@@ -126,6 +104,60 @@ $(document).ready(function () {
   $(".dropbtn").click(function () {
     $(".dropdown-content2").slideToggle(200);
   });
+  var glide = new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 1001,
+    dragThreshold: 1,
+    breakpoints: {
+      1023: {
+        perView: 2,
+      },
+      760: {
+      perView: 1,
+      }
+    }
+  })
+  
+  $("#research-tile").hover(function() {
+    
+
+    $("#venture-research-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-research-contents").fadeOut();
+  });
+
+  $("#teaching-tile").hover(function() {
+    $("#venture-teaching-contents").filter(':not(:animated)').fadeIn();
+   
+  }, function() {
+    $("#venture-teaching-contents").fadeOut();
+
+  });
+
+  $("#podcast-tile").hover(function() {
+    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-podcast-contents").fadeOut();
+  });
+
+  $("#careers-tile").hover(function() {
+    $("#venture-careers-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-careers-contents").fadeOut();
+  });
+
+  $("#social-good-tile").hover(function() {
+    $("#venture-social-good-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-social-good-contents").fadeOut();
+  });
+
+
+
+
+
 
   $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -151,5 +183,12 @@ $(document).ready(function () {
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
   });
-
+  glide.mount();
+ 
+  if ($(".curr-title").text() == "Our Team") {
+    glide.pause();
+  }
+  else {
+    glide.play();
+  }
 });

@@ -121,7 +121,7 @@
           </div>
 
           <div id="podcast-tile-image" class="accordion">
-              <h1 class="title is-4 has-text-white">Podcast</h1>
+            <h1 class="title is-4 has-text-white">Podcast</h1>
           </div>
           <div class="panel">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis
@@ -130,17 +130,17 @@
           </div>
 
           <div id="careers-tile-image" class="accordion">
-              <h1 class="title is-4 has-text-white">Careers</h1>
-            </div>
-          <div  class="panel">
+            <h1 class="title is-4 has-text-white">Careers</h1>
+          </div>
+          <div class="panel">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis
               urna. Nulla blandit mauris dictum massa scelerisque cursus. Integer elementum justo ac ipsum molestie fringilla
               et vel tortor. Praesent vel iaculis mi, facilisis vulputate justo. Donec ullamcorper quam.</p>
           </div>
 
           <div id="social-good-tile-image" class="accordion">
-              <h1 class="title is-4 has-text-white">Social Good</h1>
-            </div>
+            <h1 class="title is-4 has-text-white">Social Good</h1>
+          </div>
           <div class="panel">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis
               urna. Nulla blandit mauris dictum massa scelerisque cursus. Integer elementum justo ac ipsum molestie fringilla
@@ -159,7 +159,7 @@
                   <article id="research-tile" class="tile is-child notification ">
 
                     <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile"> RESEARCH</p>
-                    <p class="is-size-4 is-size-6-mobile">
+                    <p id="venture-research-contents" class="is-size-4 is-size-6-mobile">
                       We bring together students from a wide range of disciplines to particiapte in interdisciplenary research
                       <br>
                       <a href="https://research.warwickdatascience.com/">Learn More</a>
@@ -171,12 +171,14 @@
 
                 <div id="teaching-tile-image" class="tile is-parent">
                   <article id="teaching-tile" class="tile is-child notification is-success">
-                    <div class="content">
-                      <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile">TEACHING</p>
-                      <div class="content">
-
-                      </div>
-                    </div>
+                    <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile">TEACHING</p>
+                    <p id="venture-teaching-contents" class="is-size-4 is-size-6-mobile">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis urna. Nulla
+                      blandit mauris dictum massa scelerisque cursus. Integer elementum justo ac ipsum molestie fringilla
+                      et vel tortor. Praesent vel iaculis mi, facilisis vulputate justo. Donec ullamcorper quam
+                      <br>
+                      <a href="https://research.warwickdatascience.com/">Learn More</a>
+                    </p>
                   </article>
                 </div>
               </div>
@@ -190,15 +192,26 @@
 
                 <div id="podcast-tile-image" class="tile is-parent">
                   <article id="podcast-tile" class="tile is-child notification is-info">
-                    <a href="https://podcast.warwickdatascience.com/">
+                    
                       <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile">PODCAST</p>
-                    </a>
+                  
+                    <p id="venture-podcast-contents" class="is-size-4 is-size-6-mobile">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis urna. Nulla
+                        <br>
+                        <a href="https://podcast.warwickdatascience.com/">Learn More</a>
+                      </p>
+
                   </article>
                 </div>
 
                 <div id="careers-tile-image" class="tile is-parent">
-                  <article id="careers-tile" class="tile is-child notification is-info">
+                  <article id="careers-tile" class=" tile is-child notification is-info">
                     <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile">CAREERS</p>
+                    <p id="venture-careers-contents" class="is-size-4 is-size-6-mobile">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis urna. Nulla
+                        <br>
+                        <a href="https://podcast.warwickdatascience.com/">Learn More</a>
+                      </p>
                   </article>
                 </div>
 
@@ -206,9 +219,11 @@
                   <article id="social-good-tile" class="tile is-child notification is-danger">
                     <p class="title has-text-weight-semibold is-size-3 is-size-4-mobile">SOCIAL GOOD</p>
 
-                    <div class="content">
-
-                    </div>
+                    <p id="venture-social-good-contents" class="is-size-4 is-size-6-mobile">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sed leo iaculis sollicitudin at quis urna. Nulla
+                        <br>
+                        <a href="https://podcast.warwickdatascience.com/">Learn More</a>
+                      </p>
                   </article>
 
                 </div>
@@ -232,45 +247,46 @@
         <div class="banner container is-fluid ">
           <br>
 
-          <div class=" columns is-multiline" data-v-15d98976="">
-            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <figure class="image">
+          <div class=" columns is-multiline  has-text-centered " data-v-15d98976="">
+            <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet " data-v-15d98976="">
+              <figure class="image value-icons">
                 <img src="img/svg/raise-hand.svg">
               </figure>
-              <p class="title  is-size-5 is-size-6-mobile ">Data Science Democracy</p>
+              <p class="title  is-size-5 is-size-6-mobile">Data Science Democracy</p>
               All subjects stand to benefit from data science and should be supported and inspired as they learn about the field​
             </div>
-            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-              <figure class="image ">
-                <img src="img/svg/balance.svg">
+            <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet" data-v-15d98976="">
+              <figure class="image value-icons">
+                <img src="img/svg/rocket.svg">
               </figure>
               <p class="title  is-size-5 is-size-6-mobile ">Cutting out the Hype</p>
               The power of data science can be shared without relying on hype or shady tactics​
 
             </div>
-            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-
-              <img src="img/svg/together.svg">
-
+            <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet" data-v-15d98976="">
+              <figure class="image value-icons">
+                <img src="img/svg/together.svg">
+              </figure>
               <p class="title is-5 is-size-6-mobile ">Inclusivity as a Driving Force</p>
               We value inclusion and undertake active measures to ensure that we have a diverse membership​
 
             </div>
-            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet" data-v-15d98976="">
-
-              <img src="img/svg/technical-support.svg">
-
+            <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet" data-v-15d98976="">
+              <figure class="image value-icons">
+                <img src="img/svg/technical-support.svg">
+              </figure>
               <p class="title  is-size-5 is-size-6-mobile ">No Fear of the Technical</p>
               We do not shy away from the ugly, technical sides of data science, aiming to portray a full picture of the field​
 
             </div>
-            <div class="column is-one-fifth-desktop is-12-mobile is-3-tablet">
-
-              <img src="img/svg/heart.svg">
-
-              <p class="title  is-size-5 is-size-6-mobile ">Giving Back to the Community</p>
+            <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet">
+              <figure class="image value-icons">
+                <img src="img/svg/heart.svg">
+              </figure>
+              <p class="title  is-size-5 is-size-6-mobile ">
+                Giving Back to the Community
+              </p>
               Through DSSG and opening sourcing material we aim to support those that can benefit from our experience​
-
             </div>
           </div>
 
@@ -282,32 +298,29 @@
       <div class="hero-body">
         <div class="container  is-fluid">
 
-
           <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
 
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/janique.jpg">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class=" title is-4 has-text-white 	">Janique Krasnowska</p>
-                          <p class=" subtitle has-text-white">Research Officer</p>
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
+
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/janique.jpg">
+                      </figure>
                     </div>
+                    <div class="card-content has-text-centered">
+                      <p class=" title is-4 has-text-white 	">Janique Krasnowska</p>
+                      <p class=" subtitle has-text-white">Research Officer</p>
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+                    </div>
+
 
                   </div>
                 </li>
@@ -315,163 +328,157 @@
 
 
                 <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
 
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/tim.png">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Tim
-                            <br class="hidden-ss">Hargreaves</p>
-                          <p class="subtitle has-text-white">President</p>
 
-                          <a href="https://www.linkedin.com/in/tim-hargreaves/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/tim.png">
+                      </figure>
                     </div>
-                  </div>
-                </li>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Tim
+                        <br class="hidden-ss">Hargreaves</p>
+                      <p class="subtitle has-text-white">President</p>
 
-                <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
-
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/ciaran.jpg">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Ciaran
-                            <br class="hidden-ss"> Evans</p>
-                          <p class="subtitle has-text-white">Vice President</p>
-
-                          <a href="https://www.linkedin.com/in/ciaran-evans-9226b3186/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
+                      <a href="https://www.linkedin.com/in/tim-hargreaves/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
                     </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
 
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/yasser.png" class="responsive-img circle">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Yasser Quershi</p>
-                          <p class="subtitle has-text-white">Outreach &#38; Talks Officer</p>
 
-                          <a href="https://www.linkedin.com/in/yasser-qureshi/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
-
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/srinivas.jpg" class="responsive-img circle">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Srinivas
-                            <br class="hidden-ss"> Billa</p>
-                          <p class="subtitle has-text-white">Marketing</p>
-
-                          <a href="https://www.linkedin.com/in/srinivasbilla/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="row">
-                    <div class="column is-12">
-
-                      <div class="card card-wdss">
-
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-                            <img src="img/team/bhav.jpg" class="responsive-img circle">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Bhavik
-                            <br class="hidden-ss"> Makwana</p>
-                          <p class="subtitle has-text-white">Web Developer</p>
-
-                          <a href="https://www.linkedin.com/in/bhavik-m-536442161/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </li>
 
                 <li class="glide__slide">
 
 
-                  <div class="row">
-                    <div class="column is-12">
-
-                      <div class="card card-wdss">
-                        <div class="card-image">
-                          <figure class="image is-1by1">
-
-                            <img src="img/team/brandusa.jpg" class="responsive-img circle">
-                          </figure>
-                        </div>
-                        <div class="card-content has-text-centered">
-                          <p class="title is-4 has-text-white">Brandusa Draghici</p>
-                          <p class="subtitle has-text-white">Treasurer</p>
-
-                          <a href="https://www.linkedin.com/in/brandusa-draghici-5b0a84147/">
-                            <i class="fab fa-linkedin card-fa has-text-white"></i>
-                          </a>&nbsp;
-                          <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
-                            <i class="fab fa-github card-fa has-text-white"></i>
-                          </a>
-                        </div>
-                      </div>
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/ciaran.jpg">
+                      </figure>
                     </div>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Ciaran
+                        <br class="hidden-ss"> Evans</p>
+                      <p class="subtitle has-text-white">Vice President</p>
+
+                      <a href="https://www.linkedin.com/in/ciaran-evans-9226b3186/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+                    </div>
+
+
+                  </div>
+                </li>
+                <li class="glide__slide">
+
+
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/yasser.png" class="responsive-img ">
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Yasser Quershi</p>
+                      <p class="subtitle has-text-white">Outreach &#38; Talks Officer</p>
+
+                      <a href="https://www.linkedin.com/in/yasser-qureshi/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+                    </div>
+
+
+                  </div>
+                </li>
+                <li class="glide__slide">
+
+
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/srinivas.jpg" class="responsive-img ">
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Srinivas
+                        <br class="hidden-ss"> Billa</p>
+                      <p class="subtitle has-text-white">Marketing</p>
+
+                      <a href="https://www.linkedin.com/in/srinivasbilla/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+
+                    </div>
+
+                  </div>
+                </li>
+                <li class="glide__slide">
+
+
+                  <div class="card card-wdss">
+
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="img/team/bhav.jpg" class="responsive-img ">
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Bhavik
+                        <br class="hidden-ss"> Makwana</p>
+                      <p class="subtitle has-text-white">Web Developer</p>
+
+                      <a href="https://www.linkedin.com/in/bhavik-m-536442161/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+                    </div>
+
+
+                  </div>
+                </li>
+
+                <li class="glide__slide">
+
+
+
+
+                  <div class="card card-wdss">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+
+                        <img src="img/team/brandusa.jpg" class="responsive-img ">
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                      <p class="title is-4 has-text-white">Brandusa Draghici</p>
+                      <p class="subtitle has-text-white">Treasurer</p>
+
+                      <a href="https://www.linkedin.com/in/brandusa-draghici-5b0a84147/">
+                        <i class="fab fa-linkedin card-fa has-text-white"></i>
+                      </a>&nbsp;
+                      <a href="https://www.linkedin.com/in/janique-krasnowska-94a1a0195/">
+                        <i class="fab fa-github card-fa has-text-white"></i>
+                      </a>
+                    </div>
+
+
                   </div>
                 </li>
               </ul>
