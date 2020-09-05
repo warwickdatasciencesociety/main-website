@@ -71,6 +71,7 @@
 }
 
 
+
 #contact-section {
   background-color: #161616;
   
@@ -92,7 +93,7 @@ hr {
 .card-wdss {
   min-height: 40vh;
   background-color: #28458f; 
-  box-shadow: none;
+
 }
 
 .card-fa {
@@ -382,6 +383,10 @@ a p{
     background-image: radial-gradient(circle, rgba(0,155,255, 0.5) 0%, rgba(148,148,233,0.5) 89%), url("../img/ventures/careers.jpeg");
     background-size: cover;
   }
+
+  .value-icons {
+    display: none;
+  }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
@@ -419,11 +424,23 @@ a p{
     background-image: url("../img/ventures/careers.jpeg");
     background-size: cover;
   }
+
+  
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  .value-icons {
+    display: block;
+    margin-bottom: 3em;
+    
+
+  }
+  .value-icons>img {
+    height: 10vh;   
+    -webkit-filter: drop-shadow(00px 0px 7px rgba(25, 16, 153, 0.7));
+    filter: drop-shadow(0px 0px 7px rgba(25, 16, 153, 0.6));
+  }}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
-
 
 
 
