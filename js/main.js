@@ -108,7 +108,7 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: 1001,
+    autoplay: false,
     dragThreshold: 1,
     breakpoints: {
       1023: {

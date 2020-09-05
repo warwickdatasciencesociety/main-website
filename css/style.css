@@ -361,7 +361,15 @@ a p{
   margin-bottom: 20px;
 
 }
-@media (min-width:320px)  { 
+
+.vertical-card {
+  display: none;
+}
+.mobile-horizontal-card {
+  display: block;
+}
+
+@media (min-width:320px)   { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
   .contact-title-mobile {
     margin-bottom: 0.5em;
@@ -402,11 +410,65 @@ a p{
   .value-icons {
     display: none;
   }
+
+  .vertical-card {
+    display: block;
+  }
+  
+  .mobile-horizontal-card {
+    display: none;
+  }
 }
 
 
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  .contact-title-mobile {
+    margin-bottom: 0.5em;
+    color:red;
+  }
+  #contact-section {
+    overflow:scroll;
+  }
+  .ventures-mobile {
+    display: block;
+  }
+  #research-tile-image {
+    background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%),url("../img/ventures/research.jpg");
+    background-size: cover;
+  }
 
+  
+  #teaching-tile-image {
+    background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%),   url("../img/ventures/teaching.jpg");
+    background-size: cover;
+  }
+  
+  #podcast-tile-image {
+    background-image: linear-gradient(90deg, rgba(193,233,148,0.5) 0%, rgba(174,238,189,0.5) 100%), url("../img/ventures/podcast.jpeg");
+    background-size: cover;
+  }
+  
+  #social-good-tile-image {
+    background-image: linear-gradient(90deg, rgba(0,255,226,0.0) 0%, rgba(148,221,233,0.0) 89%), url("../img/ventures/socialgood2.jpeg");
+    background-size: cover;
+  }
+
+  #careers-tile-image {
+    background-image: radial-gradient(circle, rgba(0,155,255, 0.5) 0%, rgba(148,148,233,0.5) 89%), url("../img/ventures/careers.jpeg");
+    background-size: cover;
+  }
+
+  .value-icons {
+    display: none;
+  }
+
+  .vertical-card {
+    display: block;
+  }
+  
+  .mobile-horizontal-card {
+    display: none;
+  }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
@@ -466,4 +528,21 @@ a p{
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
 
+
+.is-horizontal-center {
+  justify-content: center;
+}
+@media  screen 
+  and (min-width: 414px) 
+  
+  and (max-height: 414px)
+  and (orientation: landscape) { 
+    
+    .vertical-card {
+      display: none;
+    }
+    .mobile-horizontal-card {
+      display: block;
+    }
+}   
 
