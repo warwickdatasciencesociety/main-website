@@ -167,7 +167,7 @@ hr {
 }
 
 #research-tile-image {
-  background-image: url("../img/ventures/research.jpg");
+  background-image: url("../img/ventures/research2.jpeg");
   background-size: cover;
 }
 
@@ -388,7 +388,7 @@ a p{
   }
   
   #social-good-tile-image {
-    background-image: linear-gradient(90deg, rgba(0,255,226,0.0) 0%, rgba(148,221,233,0.0) 89%), url("../img/ventures/socialgood.jpg");
+    background-image: linear-gradient(90deg, rgba(0,255,226,0.0) 0%, rgba(148,221,233,0.0) 89%), url("../img/ventures/socialgood2.jpeg");
     background-size: cover;
   }
 
@@ -416,7 +416,7 @@ a p{
     display: block;
   }
   #research-tile-image {
-    background-image:url("../img/ventures/research.jpg");
+    background-image:url("../img/ventures/research2.jpeg");
     background-size: cover;
   }
 
@@ -431,7 +431,7 @@ a p{
   }
   
   #social-good-tile-image {
-    background-image: url("../img/ventures/careers.jpeg");
+    background-image: url("../img/ventures/socialgood2.jpeg");
     background-size: cover;
   }
   
