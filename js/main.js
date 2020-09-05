@@ -120,6 +120,44 @@ $(document).ready(function () {
     }
   })
   
+  $("#research-tile").hover(function() {
+    
+
+    $("#venture-research-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-research-contents").fadeOut();
+  });
+
+  $("#teaching-tile").hover(function() {
+    $("#venture-teaching-contents").filter(':not(:animated)').fadeIn();
+   
+  }, function() {
+    $("#venture-teaching-contents").fadeOut();
+
+  });
+
+  $("#podcast-tile").hover(function() {
+    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-podcast-contents").fadeOut();
+  });
+
+  $("#careers-tile").hover(function() {
+    $("#venture-careers-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-careers-contents").fadeOut();
+  });
+
+  $("#social-good-tile").hover(function() {
+    $("#venture-social-good-contents").filter(':not(:animated)').fadeIn();
+  }, function() {
+    $("#venture-social-good-contents").fadeOut();
+  });
+
+
+
+
+
 
   $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section

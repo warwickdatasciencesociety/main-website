@@ -45,6 +45,12 @@
   display: none;
 }
 
+#venture-research-contents, #venture-teaching-contents,
+#venture-podcast-contents, #venture-careers-contents,
+#venture-social-good-contents {
+  display: none;
+}
+
 .test {
   background-color: #e0e0e0;
   border: none;
