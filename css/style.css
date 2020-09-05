@@ -367,7 +367,9 @@ a p{
     margin-bottom: 0.5em;
     color:red;
   }
-
+  #contact-section {
+    overflow:scroll;
+  }
   .ventures-mobile {
     display: block;
   }
@@ -409,6 +411,9 @@ a p{
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  #contact-section {
+    overflow:hidden;
+  }
   .ventures-mobile {
     display: none;
   }
