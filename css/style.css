@@ -361,6 +361,11 @@ a p{
 }
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
+  .contact-title-mobile {
+    margin-bottom: 0.5em;
+    color:red;
+  }
+
   .ventures-mobile {
     display: block;
   }
@@ -394,6 +399,8 @@ a p{
     display: none;
   }
 }
+
+
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
 }
@@ -443,8 +450,8 @@ a p{
   }
   .value-icons>img {
     height: 10vh;   
-    -webkit-filter: drop-shadow(00px 0px 7px rgba(25, 16, 153, 0.7));
-    filter: drop-shadow(0px 0px 7px rgba(25, 16, 153, 0.6));
+    -webkit-filter: drop-shadow(00px 0px 7px rgba(88, 79, 207, 0.6));
+    filter: drop-shadow(0px 0px 7px rgba(88, 79, 207, 0.6));
   }}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
