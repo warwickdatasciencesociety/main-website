@@ -4,13 +4,13 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: 2000,
+    autoplay: 1000,
     dragThreshold: 1,
     breakpoints: {
       1023: {
-        perView: 1,
+        perView: 2,
       },
-      400: {
+      760: {
       perView: 1,
       }
     }
@@ -23,6 +23,31 @@ $(document).ready(function () {
     glide.play();
   }
 
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {      
+        hideAll();
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+
+  function hideAll() {
+    for (i = 0; i < acc.length; i++) {
+      var panel = acc[i].nextElementSibling;
+      panel.style.maxHeight = null;
+      acc[i].classList.remove("active");
+    }
+
+  }
   function getPageTitle(index) {
     switch (index) {
       case 1:
@@ -47,7 +72,7 @@ $(document).ready(function () {
         break;
       case 3:
         $(".curr-title").fadeOut(function() {
-          $(this).html("Core Values").fadeIn(500)
+          $(this).html("Values").fadeIn(500)
         });
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
@@ -121,7 +146,7 @@ $(document).ready(function () {
     afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
-    responsiveFallback: 769,        // You can fallback to normal page scroll by defining the width of the browser in which
+    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
