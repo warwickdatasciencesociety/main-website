@@ -188,7 +188,7 @@ hr {
 #teaching-tile-image {
   background-image: url("../img/ventures/teaching.jpg");
   background-size: cover;
-    background-attachment:fixed; 
+  background-attachment:initial; 
 
 }
 
@@ -204,7 +204,8 @@ hr {
 
 #podcast-tile-image {
   background-image: url("../img/ventures/podcast.jpeg");
-  background-size: cover;  background-attachment:fixed; 
+  background-size: cover;  
+  background-attachment:initial; 
 
 }
 
@@ -220,8 +221,8 @@ hr {
 
 #social-good-tile-image {
   background-image: url("../img/ventures/socialgood.jpg");
-  background-size: cover;  background-attachment:fixed; 
-
+  background-size: cover;  
+  background-attachment:initial;
 }
 
 #careers-tile {
@@ -237,7 +238,8 @@ hr {
 
 #careers-tile-image {
   background-image: url("../img/ventures/careers.jpeg");
-  background-size: cover;  background-attachment:fixed; 
+  background-size: cover;  
+  background-attachment:initial; 
 
 }
 
