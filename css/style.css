@@ -1,5 +1,7 @@
 
-
+body {
+  -webkit-text-size-adjust: 100%;
+}
 .dropbtn {
   background-color: #e0e0e0;
   font-size: 16px;
@@ -437,7 +439,9 @@ a p{
     background-image: url("../img/ventures/careers.jpeg");
     background-size: cover;
   }
-
+  .venture-text {
+    font-size: 1em;
+  }
   
 }
 
@@ -445,8 +449,9 @@ a p{
   .value-icons {
     display: block;
     margin-bottom: 3em;
-    
-
+  }
+  .venture-text {
+    font-size: 1.5em;
   }
   .value-icons>img {
     height: 10vh;   
