@@ -1,13 +1,27 @@
 $(document).ready(function () {
 
-  // $("#home").addClass(" animate__animated");
-  // $("#home").addClass("animate__slideInRight");
-  // setTimeout(function(){
-  //   $("#home-title").addClass("animate__animated");
-  //   $("#home-title").addClass("animate__fadeIn");
-
-  // }, 100); 
+  var glide = new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 2000,
+    dragThreshold: 1,
+    breakpoints: {
+      1023: {
+        perView: 1,
+      },
+      400: {
+      perView: 1,
+      }
+    }
+  }).mount()
   
+  if ($(".curr-title").text() == "Our Team") {
+    glide.pause();
+  }
+  else {
+    glide.play();
+  }
 
   function getPageTitle(index) {
     switch (index) {
@@ -15,11 +29,18 @@ $(document).ready(function () {
         $(".curr-title").fadeOut(function() {
           $(this).html("").fadeIn(500)
         });
-        $("#wdss-logo").attr("src", "img/logo-transparent.png");
+        $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         break;
+      // case 2:
+      //   $(".curr-title").fadeOut(function() {
+      //     $(this).html("About Us").fadeIn(500)
+      //   });
+      //   $(".curr-title").removeClass("has-text-white");
+      //   $("#wdss-logo").attr("src", "img/logo-transparent.png");
+      //   break;
       case 2:
         $(".curr-title").fadeOut(function() {
-          $(this).html("About Us").fadeIn(500)
+          $(this).html("Ventures").fadeIn(500)
         });
         $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
@@ -28,26 +49,18 @@ $(document).ready(function () {
         $(".curr-title").fadeOut(function() {
           $(this).html("Core Values").fadeIn(500)
         });
-        $(".curr-title").addClass("has-text-white");
-        $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
-        break;
-      case 4:
-        $(".curr-title").fadeOut(function() {
-          $(this).html("Ventures").fadeIn(500)
-        });
-        $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
-      case 5:
+      case 4:
         $(".curr-title").fadeOut(function() {
           $(this).html("Our Team").fadeIn(500)
         });  
         $(".curr-title").removeClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
-      case 6:
+      case 5:
         $(".curr-title").fadeOut(function() {
-          $(this).html("Connect With Us").fadeIn(500)
+          $(this).html("Contact Us").fadeIn(500)
         });
         $(".curr-title").addClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
@@ -65,7 +78,10 @@ $(document).ready(function () {
     $(".main").moveTo(1);
   });
 
-  $("#about").click(function () {
+  // $("#about").click(function () {
+  //   $(".main").moveTo(2);
+  // });
+  $("#ventures").click(function () {
     $(".main").moveTo(2);
   });
 
@@ -73,16 +89,13 @@ $(document).ready(function () {
     $(".main").moveTo(3);
   });
 
-  $("#ventures").click(function () {
+  
+  $("#team").click(function () {
     $(".main").moveTo(4);
   });
 
-  $("#team").click(function () {
-    $(".main").moveTo(5);
-  });
-
   $("#contact").click(function () {
-    $(".main").moveTo(6);
+    $(".main").moveTo(5);
   });
 
   $(".dropbtn").click(function () {
@@ -98,12 +111,17 @@ $(document).ready(function () {
     updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {
       getPageTitle(index);
-
+      if ($(".curr-title").text() == "Our Team") {
+        glide.pause();
+      }
+      else {
+        glide.play();
+      }
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
-    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+    responsiveFallback: 769,        // You can fallback to normal page scroll by defining the width of the browser in which
     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
