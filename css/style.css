@@ -486,15 +486,15 @@ a p{
   }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .regular-values-desc {
     display: none;
   }
   .small-screen-values-desc {
     display: flex;
   }
-}
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-
   #contact-section {
     overflow:hidden;
   }
