@@ -34,13 +34,6 @@ $(document).ready(function () {
         });
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         break;
-      // case 2:
-      //   $(".curr-title").fadeOut(function() {
-      //     $(this).html("About Us").fadeIn(500)
-      //   });
-      //   $(".curr-title").removeClass("has-text-white");
-      //   $("#wdss-logo").attr("src", "img/logo-transparent.png");
-      //   break;
       case 2:
         $(".curr-title").fadeOut(function() {
           $(this).html("Ventures").fadeIn(500)
@@ -67,7 +60,6 @@ $(document).ready(function () {
         });
         $(".curr-title").addClass("has-text-white");
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
-        // $(".curr-title").addClass("is-3-mobile");
         break;
     };
   }
@@ -81,9 +73,7 @@ $(document).ready(function () {
     $(".main").moveTo(1);
   });
 
-  // $("#about").click(function () {
-  //   $(".main").moveTo(2);
-  // });
+
   $("#ventures").click(function () {
     $(".main").moveTo(2);
   });
