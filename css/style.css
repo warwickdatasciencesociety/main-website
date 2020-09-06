@@ -361,6 +361,9 @@ a p{
   margin-bottom: 20px;
 
 }
+.value-icons {
+  display: none;
+}
 
 .vertical-card {
   display: none;
@@ -377,6 +380,12 @@ a p{
   .contact-title-mobile {
     margin-bottom: 0.5em;
     color:red;
+  }
+  .regular-values-desc {
+    display: block;
+  }
+  .small-screen-values-desc {
+    display: none;
   }
   #contact-section {
     overflow:scroll;
@@ -432,6 +441,14 @@ a p{
   #contact-section {
     overflow:scroll;
   }
+
+  .regular-values-desc {
+    display: none;
+  }
+  .small-screen-values-desc {
+    display: flex;
+  }
+
   .ventures-mobile {
     display: block;
   }
@@ -516,7 +533,7 @@ a p{
   
 }
 
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1024px) { /* big landscape tablets, laptops, and desktops */ 
   .small-screen-values-desc {
     display: none;
   }
