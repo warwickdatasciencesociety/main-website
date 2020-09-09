@@ -380,6 +380,11 @@ a p{
 .regular-values-desc {
   display: none;
 }
+
+.regular-core {
+  display: none;
+}
+
 @media (min-width:320px)   { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
   .contact-title-mobile {
@@ -439,7 +444,14 @@ a p{
   }
 }
 
-
+@media (min-width: 400px) {
+  .regular-core {
+    display: inline;
+  }
+  .small-core {
+    display: none;
+  }
+}
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   .contact-title-mobile {
     margin-bottom: 0.5em;

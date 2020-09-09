@@ -110,6 +110,22 @@ $(document).ready(function () {
     }
   })
   
+  var glide_values = new Glide('.glide-values', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 4500,
+    dragThreshold: 1,
+    breakpoints: {
+      1023: {
+        perView: 2,
+      },
+      760: {
+      perView: 1,
+      }
+    }
+  })
+  
   $("#research-tile").hover(function() {
     
 
@@ -119,10 +135,12 @@ $(document).ready(function () {
   });
 
   $("#teaching-tile").hover(function() {
-    $("#venture-teaching-contents").filter(':not(:animated)').fadeIn();
-   
+    // $("#venture-teaching-contents").filter(':not(:animated)').fadeIn();
+    $("#venture-teaching-contents").css('display', 'block')
+
   }, function() {
-    $("#venture-teaching-contents").fadeOut();
+    // $("#venture-teaching-contents").fadeOut();
+    $("#venture-teaching-contents").css('display', 'none')
 
   });
 
@@ -173,8 +191,10 @@ $(document).ready(function () {
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
   });
+
+
   glide.mount();
- 
+  glide_values.mount();
   if ($(".curr-title").text() == "Our Team") {
     glide.pause();
   }
