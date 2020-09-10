@@ -2,6 +2,22 @@
 body {
   -webkit-text-size-adjust: 100%;
 }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.glide-active {
+  background-color: #28458f;
+}
+
 .dropbtn {
   background-color: #e0e0e0;
   font-size: 16px;
@@ -51,6 +67,8 @@ body {
 #venture-podcast-contents, #venture-careers-contents,
 #venture-social-good-contents {
   display: none;
+  text-shadow: 2px 0px 5px #000000;
+
 }
 
 .test {
@@ -158,44 +176,45 @@ hr {
   z-index: 100;
 }
 #research-tile {
-
+  
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%);
   min-height: 40vh; 
    /* background: red; */
-  color: white;
+  color: white;   
 }
+
+
 
 #research-tile-image {
   background-image: url("../img/ventures/research2.jpeg");
   background-size: cover;
+
+
 }
 
 
 
 #research-tile:hover {
   background: none;
+  backdrop-filter: blur(4px);
 }
 
 
 #teaching-tile {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%);
-  -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-  z-index: 1;
 }
 
 #teaching-tile:hover {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,0.0) 0%, rgba(9,9,121,0.0) 34%, rgba(0,212,255,0.0) 100%);
+  background: none;
+  backdrop-filter: blur(4px);
 }
 
 #teaching-tile-image {
   background-image: url("../img/ventures/teaching.jpg");
   background-size: cover;
+  
 }
 
 #podcast-tile {
@@ -204,8 +223,8 @@ hr {
 }
 
 #podcast-tile:hover {
-  background: rgb(193,233,148);
-  background: linear-gradient(90deg, rgba(193,233,148,0.0) 0%, rgba(174,238,189,0.0) 100%);
+  background: none;
+  backdrop-filter: blur(4px);
 }
 
 #podcast-tile-image {
@@ -219,8 +238,8 @@ hr {
 }
 
 #social-good-tile:hover {
-  background: rgb(0,255,226);
-  background: linear-gradient(90deg, rgba(0,255,226,0.0) 0%, rgba(148,221,233,0.0) 89%);
+  background: none;
+  backdrop-filter: blur(4px);
 }
 
 #social-good-tile-image {
@@ -235,8 +254,8 @@ hr {
 }
 
 #careers-tile:hover {
-  background: rgb(0,155,255);
-  background: radial-gradient(circle, rgba(0,155,255, 0.0) 0%, rgba(148,148,233,0.0) 89%);
+  background: none;
+  backdrop-filter: blur(4px);
 }
 
 #careers-tile-image {
@@ -333,14 +352,16 @@ a p{
 }
 .accordion {
   background-color: #eee;
-
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  height:70px;
+  overflow:hidden;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  margin-top:30px;
 }
 
 .ventures-mobile {
@@ -361,6 +382,8 @@ a p{
   margin-bottom: 20px;
 
 }
+
+
 .value-icons {
   display: none;
 }
@@ -375,7 +398,17 @@ a p{
 .regular-values-desc {
   display: none;
 }
+
+.regular-core {
+  display: none;
+}
+
 @media (min-width:320px)   { 
+  .card-wdss {
+    min-height: 60vh;
+    background-color: #28458f; 
+  
+  }
   /* smartphones, iPhone, portrait 480x320 phones */ 
   .contact-title-mobile {
     margin-bottom: 0.5em;
@@ -421,8 +454,13 @@ a p{
 
   .value-icons {
     display: none;
+    -webkit-filter: drop-shadow(0 0 8px rgba(69, 112, 255, 0.8));
+     filter: drop-shadow(0 0 8px rgba(45, 102, 207, 0.8));
   }
-
+  .value-icons-small {
+    -webkit-filter: drop-shadow(0 0 6px rgba(69, 112, 255, 0.8));
+    filter: drop-shadow(0 0 6px rgba(45, 102, 207, 0.8));
+  }
   .vertical-card {
     display: block;
   }
@@ -432,7 +470,14 @@ a p{
   }
 }
 
-
+@media (min-width: 412px) {
+  .regular-core {
+    display: inline;
+  }
+  .small-core {
+    display: none;
+  }
+}
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   .contact-title-mobile {
     margin-bottom: 0.5em;
@@ -486,7 +531,11 @@ a p{
   }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-
+  .card-wdss {
+    min-height: 40vh;
+    background-color: #28458f; 
+  
+  }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .regular-values-desc {
@@ -570,6 +619,10 @@ a p{
     }
     .mobile-horizontal-card {
       display: block;
+    }  .card-wdss {
+      min-height: 40vh;
+      background-color: #28458f; 
+    
     }
 }   
 

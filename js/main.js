@@ -6,26 +6,42 @@ $(document).ready(function () {
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
 
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
+      // var panel = this.nextElementSibling;
+      console.log(this.classList);
+
+      console.log($(this).hasClass("active"));
+      console.log(this.classList);
+      if ($(this).hasClass("active")) {
+        // panel.style.maxHeight = null;
+        // $(this).animate({height:"70px"});
+        console.log("hgere");      this.classList.toggle("active");
+
+        $(this).css("height", "70px");
       } else {      
         hideAll();
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        
+        // panel.style.maxHeight = panel.scrollHeight + "px";
+        $(this).css("height", "200px");
+        this.classList.toggle("active");
+
+      
       }
     });
   }
 
   function hideAll() {
     for (i = 0; i < acc.length; i++) {
-      var panel = acc[i].nextElementSibling;
-      panel.style.maxHeight = null;
+      // var panel = acc[i].nextElementSibling;
+      // panel.style.maxHeight = null;
+
+      $(".accordion").css({height:"70px"});
       acc[i].classList.remove("active");
     }
 
   }
+  
+  
   function getPageTitle(index) {
     switch (index) {
       case 1:
@@ -98,7 +114,7 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: false,
+    autoplay: 1500,
     dragThreshold: 1,
     breakpoints: {
       1023: {
@@ -110,42 +126,66 @@ $(document).ready(function () {
     }
   })
   
+  var glide_values = new Glide('.glide-values', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 4500,
+    dragThreshold: 1,
+    breakpoints: {
+      1023: {
+        perView: 2,
+      },
+      760: {
+      perView: 1,
+      }
+    },
+    
+  });
+  glide_values.on('run', function(e) {
+    if (e.direction == "<") {
+      showSlides(slideIndex-=1);
+    }
+    else {
+      showSlides(slideIndex+=1);
+    }
+  })
+
   $("#research-tile").hover(function() {
     
 
-    $("#venture-research-contents").filter(':not(:animated)').fadeIn();
+    $("#venture-research-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
-    $("#venture-research-contents").fadeOut();
+    $("#venture-research-contents").fadeOut(220);
   });
 
   $("#teaching-tile").hover(function() {
-    $("#venture-teaching-contents").filter(':not(:animated)').fadeIn();
-   
+    $("#venture-teaching-contents").filter(':not(:animated)').fadeIn(220);
+    // $("#venture-teaching-contents").css('display', 'block')
+
   }, function() {
-    $("#venture-teaching-contents").fadeOut();
+    $("#venture-teaching-contents").fadeOut(220);
+    // $("#venture-teaching-contents").css('display', 'none')
 
   });
 
   $("#podcast-tile").hover(function() {
-    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn();
+    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
-    $("#venture-podcast-contents").fadeOut();
+    $("#venture-podcast-contents").fadeOut(220);
   });
 
   $("#careers-tile").hover(function() {
-    $("#venture-careers-contents").filter(':not(:animated)').fadeIn();
+    $("#venture-careers-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
-    $("#venture-careers-contents").fadeOut();
+    $("#venture-careers-contents").fadeOut(220);
   });
 
   $("#social-good-tile").hover(function() {
-    $("#venture-social-good-contents").filter(':not(:animated)').fadeIn();
+    $("#venture-social-good-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
-    $("#venture-social-good-contents").fadeOut();
+    $("#venture-social-good-contents").fadeOut(220);
   });
-
-
-
 
 
 
@@ -173,8 +213,10 @@ $(document).ready(function () {
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
   });
+
+
   glide.mount();
- 
+  glide_values.mount();
   if ($(".curr-title").text() == "Our Team") {
     glide.pause();
   }
@@ -182,3 +224,28 @@ $(document).ready(function () {
     glide.play();
   }
 });
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var dots = document.getElementsByClassName("dot");
+  if (n > dots.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = dots.length}
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" glide-active", "");
+  }
+  dots[slideIndex-1].className += " glide-active";
+}
