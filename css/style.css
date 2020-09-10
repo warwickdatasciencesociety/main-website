@@ -52,7 +52,6 @@ body {
   z-index:99;
 }
 
-
 .dropdown-content2 {
   float: right;
   position: absolute;
@@ -189,8 +188,6 @@ hr {
 #research-tile-image {
   background-image: url("../img/ventures/research2.jpeg");
   background-size: cover;
-
-
 }
 
 
@@ -426,28 +423,28 @@ a p{
   .ventures-mobile {
     display: block;
   }
-  #research-tile-image {
+  #research-tile-image-mobile {
     background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%),url("../img/ventures/research.jpg");
     background-size: cover;
   }
 
   
-  #teaching-tile-image {
+  #teaching-tile-image-mobile {
     background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 34%, rgba(0,212,255,0.5) 100%),   url("../img/ventures/teaching.jpg");
     background-size: cover;
   }
   
-  #podcast-tile-image {
+  #podcast-tile-image-mobile {
     background-image: linear-gradient(90deg, rgba(193,233,148,0.5) 0%, rgba(174,238,189,0.5) 100%), url("../img/ventures/podcast.jpeg");
     background-size: cover;
   }
   
-  #social-good-tile-image {
+  #social-good-tile-image-mobile {
     background-image: linear-gradient(90deg, rgba(0,255,226,0.0) 0%, rgba(148,221,233,0.0) 89%), url("../img/ventures/socialgood2.jpeg");
     background-size: cover;
   }
 
-  #careers-tile-image {
+  #careers-tile-image-mobile {
     background-image: radial-gradient(circle, rgba(0,155,255, 0.5) 0%, rgba(148,148,233,0.5) 89%), url("../img/ventures/careers.jpeg");
     background-size: cover;
   }

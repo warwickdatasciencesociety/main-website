@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd() {
+      node.classList.remove(`${prefix}animated`, animationName);
+      node.removeEventListener('animationend', handleAnimationEnd);
+
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd);
+  });
 
 
   var acc = document.getElementsByClassName("accordion");
@@ -125,7 +143,10 @@ $(document).ready(function () {
       }
     }
   })
-  
+
+  // $("#research-tile-image").addClass("animate__animated");
+  // $("#research-tile-image").addClass("animate__fadeInDown");
+  console.log($("#research-tile-image").hasClass("animate__animated"))
   var glide_values = new Glide('.glide-values', {
     type: 'carousel',
     startAt: 0,
@@ -187,7 +208,7 @@ $(document).ready(function () {
     $("#venture-social-good-contents").fadeOut(220);
   });
 
-
+  flag = false;
 
   $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -203,7 +224,17 @@ $(document).ready(function () {
       }
       else {
         glide.play();
+      }  
+      
+      if (index == "2" && !flag) {
+      animateCSS('#research-tile-image', 'fadeInDown');
+      animateCSS('#teaching-tile-image', 'fadeInRight');
+      animateCSS('#podcast-tile-image', 'fadeInLeft');
+      animateCSS('#careers-tile-image', 'fadeInUp');
+      animateCSS('#social-good-tile-image', 'fadeInRight');
+      flag = true;
       }
+
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
