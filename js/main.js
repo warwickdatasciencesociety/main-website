@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $('.pagenav').click(function(event){
+    event.preventDefault();
+  });
+
   const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
   new Promise((resolve, reject) => {
@@ -40,7 +44,8 @@ $(document).ready(function () {
         hideAll();
         
         // panel.style.maxHeight = panel.scrollHeight + "px";
-        $(this).css("height", "200px");
+        
+        $(this).css("height", ($(this).prop('scrollHeight') + 10) + 'px');
         this.classList.toggle("active");
 
       
@@ -132,7 +137,7 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: 1500,
+    autoplay: 4500,
     dragThreshold: 1,
     breakpoints: {
       1023: {
@@ -144,9 +149,15 @@ $(document).ready(function () {
     }
   })
 
-  // $("#research-tile-image").addClass("animate__animated");
-  // $("#research-tile-image").addClass("animate__fadeInDown");
-  console.log($("#research-tile-image").hasClass("animate__animated"))
+  glide.on('run', function(e) {
+    if (e.direction == "<") {
+      showSlidesTeam(teamIndex-=1);
+    }
+    else {
+      showSlidesTeam(teamIndex+=1);
+    }
+  })
+  
   var glide_values = new Glide('.glide-values', {
     type: 'carousel',
     startAt: 0,
@@ -216,7 +227,7 @@ $(document).ready(function () {
     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
     animationTime: 750,             // AnimationTime let you define how long each section takes to animate
     pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-    updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {
       getPageTitle(index);
       if ($(".curr-title").text() == "Our Team") {
@@ -257,17 +268,11 @@ $(document).ready(function () {
 });
 
 var slideIndex = 1;
+var teamIndex = 1;
 showSlides(slideIndex);
+showSlidesTeam(teamIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
   var i;
@@ -279,4 +284,17 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" glide-active", "");
   }
   dots[slideIndex-1].className += " glide-active";
+}
+
+
+function showSlidesTeam(n) {
+  var i;
+  var dots = document.getElementsByClassName("dot-team");
+  if (n > dots.length) {teamIndex = 1}
+  if (n < 1) {teamIndex = dots.length}
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" glide-active", "");
+  }
+  dots[teamIndex-1].className += " glide-active";
 }

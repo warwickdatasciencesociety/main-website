@@ -3,7 +3,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 /* The dots/bullets/indicators */
-.dot {
+.dot, .dot-team {
   cursor: pointer;
   height: 5px;
   width: 5px;
@@ -70,7 +70,7 @@ body {
 
 }
 
-.test {
+.pagenav {
   background-color: #e0e0e0;
   border: none;
   color: black;
@@ -358,11 +358,12 @@ a p{
   border: none;
   outline: none;
   transition: 0.4s;
-  margin-top:30px;
+  margin-top:4vh;
 }
 
 .ventures-mobile {
  display: none;
+ margin-top:-3vh;
 }
 
 .ventures-desktop {
@@ -536,11 +537,11 @@ a p{
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .regular-values-desc {
-    display: none;
+    display: block;
   }
-  .small-screen-values-desc {
+  /* .small-screen-values-desc {
     display: flex;
-  }
+  } */
   #contact-section {
     overflow:hidden;
   }
