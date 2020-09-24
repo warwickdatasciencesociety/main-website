@@ -517,9 +517,13 @@ a p{
   }
 
   .value-icons {
-    display: none;
+    display: block;
+    margin-bottom: 1em;
   }
-
+  .value-icons>img {
+    height: 5vh;   
+ 
+  }}
   .vertical-card {
     display: block;
   }
