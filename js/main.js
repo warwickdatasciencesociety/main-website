@@ -1,33 +1,33 @@
 $(document).ready(function () {
   // $('#ambassador-cards').css('display', 'none');
-  function switchCards(startup) {
+  function switchCards(startup, elem) {
     if (startup) {
       $('#ambassador-cards').css("display","none");
       return;
     }
-    if (!$(this).hasClass('is-selected-team')) {
+    console.log($(elem).hasClass('is-selected-team'));
+    if (!$(elem).hasClass('is-selected-team')) {
       $('#display-exec').toggleClass('is-selected-team');
       $('#display-exec').toggleClass('is-hidden-team');
       $('#display-ambassadors').toggleClass('is-selected-team');
       $('#display-ambassadors').toggleClass('is-hidden-team');
-      
-
     }
     if (!$('#display-exec').hasClass('is-selected-team')) {
       $('#exec-cards').css("display","none");
       $('#ambassador-cards').css("display","block");
       glide.pause();
       glide_ambassadors.play();
+      glide_ambassadors.update();
     }else {
       $('#ambassador-cards').css("display","none");
       $('#exec-cards').css("display","block");
       glide.play();
       glide_ambassadors.pause();
-      
+      glide.update();
     }
   }
   $('.select-team').click(function() {
-    switchCards(false);
+    switchCards(false, this);
   });
   $('.pagenav').click(function(event){
     event.preventDefault();
@@ -170,6 +170,7 @@ $(document).ready(function () {
     perView: 3,
     autoplay: 4500,
     dragThreshold: 1,
+    keyboard: false,
     breakpoints: {
       1023: {
         perView: 2,
@@ -186,6 +187,7 @@ $(document).ready(function () {
     perView: 3,
     autoplay: 4500,
     dragThreshold: 1,
+    keyboard: false,
     breakpoints: {
       1023: {
         perView: 2,
@@ -220,6 +222,7 @@ $(document).ready(function () {
     perView: 3,
     autoplay: 4500,
     dragThreshold: 1,
+    keyboard: false,
     breakpoints: {
       1023: {
         perView: 2,
@@ -288,9 +291,13 @@ $(document).ready(function () {
       getPageTitle(index);
       if ($(".curr-title").text() == "Our Team") {
         glide.pause();
+        glide_ambassadors.pause();
+
       }
       else {
         glide.play();
+        glide_ambassadors.play();
+
       }  
       
       if (index == "2" && !flag) {
@@ -315,13 +322,17 @@ $(document).ready(function () {
   glide_ambassadors.mount();
   glide.mount();
   glide_values.mount();
+  
   if ($(".curr-title").text() == "Our Team") {
     glide.pause();
+    glide_ambassadors.pause();
   }
   else {
     glide.play();
+    glide_ambassadors.play();
   }
-  switchCards(true);
+  switchCards(true, null);
+  
 });
 
 var slideIndex = 1;
