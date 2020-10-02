@@ -1,7 +1,38 @@
 $(document).ready(function () {
+  // $('#ambassador-cards').css('display', 'none');
+  function switchCards(startup) {
+    if (startup) {
+      $('#ambassador-cards').css("display","none");
+      return;
+    }
+    if (!$(this).hasClass('is-selected-team')) {
+      $('#display-exec').toggleClass('is-selected-team');
+      $('#display-exec').toggleClass('is-hidden-team');
+      $('#display-ambassadors').toggleClass('is-selected-team');
+      $('#display-ambassadors').toggleClass('is-hidden-team');
+      
+
+    }
+    if (!$('#display-exec').hasClass('is-selected-team')) {
+      $('#exec-cards').css("display","none");
+      $('#ambassador-cards').css("display","block");
+      glide.pause();
+      glide_ambassadors.play();
+    }else {
+      $('#ambassador-cards').css("display","none");
+      $('#exec-cards').css("display","block");
+      glide.play();
+      glide_ambassadors.pause();
+      
+    }
+  }
+  $('.select-team').click(function() {
+    switchCards(false);
+  });
   $('.pagenav').click(function(event){
     event.preventDefault();
   });
+  
 
   const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
@@ -133,6 +164,22 @@ $(document).ready(function () {
   $(".dropbtn").click(function () {
     $(".dropdown-content2").slideToggle(200);
   });
+  var glide_ambassadors = new Glide('.glide-ambassador', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    autoplay: 4500,
+    dragThreshold: 1,
+    breakpoints: {
+      1023: {
+        perView: 2,
+      },
+      760: {
+      perView: 1,
+      }
+    }
+  })
+
   var glide = new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
@@ -155,6 +202,15 @@ $(document).ready(function () {
     }
     else {
       showSlidesTeam(teamIndex+=1);
+    }
+  })
+
+  glide_ambassadors.on('run', function(e) {
+    if (e.direction == "<") {
+      showSlidesAmbassadors(ambassadorIndex-=1);
+    }
+    else {
+      showSlidesAmbassadors(ambassadorIndex+=1);
     }
   })
   
@@ -256,7 +312,7 @@ $(document).ready(function () {
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
   });
 
-
+  glide_ambassadors.mount();
   glide.mount();
   glide_values.mount();
   if ($(".curr-title").text() == "Our Team") {
@@ -265,12 +321,15 @@ $(document).ready(function () {
   else {
     glide.play();
   }
+  switchCards(true);
 });
 
 var slideIndex = 1;
 var teamIndex = 1;
+var ambassadorIndex = 1;
 showSlides(slideIndex);
 showSlidesTeam(teamIndex);
+showSlidesAmbassadors(ambassadorIndex);
 
 
 
@@ -297,4 +356,16 @@ function showSlidesTeam(n) {
       dots[i].className = dots[i].className.replace(" glide-active", "");
   }
   dots[teamIndex-1].className += " glide-active";
+}
+
+function showSlidesAmbassadors(n) {
+  var i;
+  var dots = document.getElementsByClassName("dot-team-ambassador");
+  if (n > dots.length) {ambassadorIndex = 1}
+  if (n < 1) {ambassadorIndex = dots.length}
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" glide-active", "");
+  }
+  dots[ambassadorIndex-1].className += " glide-active";
 }

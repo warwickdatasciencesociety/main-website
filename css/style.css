@@ -2,8 +2,18 @@
 body {
   -webkit-text-size-adjust: 100%;
 }
+.is-selected-team {
+  color: black;
+}
+.is-hidden-team {
+  color:#cccccc;
+}
+
+/* #ambassador-cards {
+  display:none;
+} */
 /* The dots/bullets/indicators */
-.dot, .dot-team {
+.dot, .dot-team, .dot-team-ambassador {
   cursor: pointer;
   height: 5px;
   width: 5px;
@@ -118,6 +128,12 @@ hr {
 .card-wdss {
   min-height: 40vh;
   background-color: #28458f; 
+
+}
+
+.card-wdss-ambassador {
+  min-height: 60vh;
+  background-color: #28698f; 
 
 }
 
