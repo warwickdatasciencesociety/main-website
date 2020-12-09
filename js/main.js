@@ -1,5 +1,7 @@
 $(document).ready(function () {
   // $('#ambassador-cards').css('display', 'none');
+  window.scrollTo(0,1);
+
   function switchCards(startup, elem) {
     if (startup) {
       $('#ambassador-cards').css("display","none");

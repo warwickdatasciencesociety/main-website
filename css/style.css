@@ -132,7 +132,7 @@ hr {
 }
 
 .card-wdss-ambassador {
-  min-height: 60vh;
+  min-height: 40vh;
   background-color: #28698f; 
 
 }
@@ -423,6 +423,11 @@ a p{
     background-color: #28458f; 
   
   }
+  .card-wdss-ambassador {
+    min-height: 60vh;
+    background-color: #28458f; 
+  
+  }
   /* smartphones, iPhone, portrait 480x320 phones */ 
   .contact-title-mobile {
     margin-bottom: 0.5em;
@@ -472,7 +477,7 @@ a p{
      filter: drop-shadow(0 0 8px rgba(45, 102, 207, 0.8));
   }
   .value-icons-small {
-    -webkit-filter: drop-shadow(0 0 6px rgba(69, 112, 255, 0.8));
+    -webkit-filter: drop-shadow(0 0 6px rgba(108, 121, 164, 0.8));
     filter: drop-shadow(0 0 6px rgba(45, 102, 207, 0.8));
   }
   .vertical-card {
@@ -554,6 +559,11 @@ a p{
     background-color: #28458f; 
   
   }
+  .card-wdss-ambassador {
+    min-height: 40vh;
+    background-color: #28458f; 
+  
+  }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .regular-values-desc {
@@ -597,6 +607,10 @@ a p{
   }
   .venture-text {
     font-size: 1em;
+  }
+  .venture-text-mobile {
+    font-size: 1em;
+    text-shadow: 2px 2px #000000;
   }
   
 }
