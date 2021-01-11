@@ -419,12 +419,12 @@ a p{
 
 @media (min-width:320px)   { 
   .card-wdss {
-    min-height: 60vh;
+    min-height: 65vh;
     background-color: #28458f; 
   
   }
   .card-wdss-ambassador {
-    min-height: 60vh;
+    min-height: 65vh;
     background-color: #28458f; 
   
   }
