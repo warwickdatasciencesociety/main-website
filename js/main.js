@@ -1,7 +1,8 @@
 $(document).ready(function () {
   // $('#ambassador-cards').css('display', 'none');
   window.scrollTo(0,1);
-  
+  var dt = new Date();
+  $("#copyright-year").html(dt.getFullYear());
   // $(".pagenav").click(function() {
   //   $(".active_menu").toggleClass("active_menu");
   //   $(this).toggleClass("active_menu");
