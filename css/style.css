@@ -28,6 +28,8 @@ body {
   background-color: #28458f;
 }
 
+/* Style the active class (and buttons on mouse-over) */
+
 .dropbtn {
   background-color: #e0e0e0;
   font-size: 16px;
@@ -80,6 +82,8 @@ body {
 
 }
 
+
+
 .pagenav {
   background-color: #e0e0e0;
   border: none;
@@ -98,6 +102,10 @@ body {
   box-shadow: 51px 51px 29px -29px rgba(0,0,0,0.75);
 }
 
+.active_menu {
+  background-color: #28458f;
+  color: white;
+}
 
 #home {
   background-image: url("cover-image-custom.jpg");
@@ -185,6 +193,7 @@ hr {
 }
 #wdss-logo {
   margin-top: 0.5vh;
+  margin-left: 0.5vh;
 }
 .curr-title {
   margin-top: 1vh;
@@ -419,12 +428,12 @@ a p{
 
 @media (min-width:320px)   { 
   .card-wdss {
-    min-height: 65vh;
+    min-height: 70vh;
     background-color: #28458f; 
   
   }
   .card-wdss-ambassador {
-    min-height: 65vh;
+    min-height: 70vh;
     background-color: #28458f; 
   
   }

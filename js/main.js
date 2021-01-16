@@ -1,6 +1,25 @@
 $(document).ready(function () {
   // $('#ambassador-cards').css('display', 'none');
   window.scrollTo(0,1);
+  
+  // $(".pagenav").click(function() {
+  //   $(".active_menu").toggleClass("active_menu");
+  //   $(this).toggleClass("active_menu");
+  // });
+  // Get the container element
+  // var btnContainer = document.getElementById("myDropdown");
+
+  // // Get all buttons with class="btn" inside the container
+  // var btns = btnContainer.getElementsByClassName("pagenav");
+
+  // // Loop through the buttons and add the active class to the current/clicked button
+  // for (var i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function() {
+  //     var current = document.getElementsByClassName("active_menu");
+  //     current[0].className = current[0].className.replace(" active_menu", "");
+  //     this.className += " active_menu";
+  //   });
+  // } 
 
   function switchCards(startup, elem) {
     if (startup) {
@@ -104,39 +123,84 @@ $(document).ready(function () {
         $(".curr-title").fadeOut(function() {
           $(this).html("").fadeIn(500)
         });
-        $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         break;
       case 2:
         $(".curr-title").fadeOut(function() {
           $(this).html("Ventures").fadeIn(500)
         });
         $(".curr-title").removeClass("has-text-white");
-        $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 3:
         $(".curr-title").fadeOut(function() {
           $(this).html("Values").fadeIn(500)
         });
-        $("#wdss-logo").attr("src", "img/logo-transparent.png");
+        $(".curr-title").removeClass("has-text-white");
         break;
       case 4:
         $(".curr-title").fadeOut(function() {
           $(this).html("Our Team").fadeIn(500)
         });  
         $(".curr-title").removeClass("has-text-white");
-        $("#wdss-logo").attr("src", "img/logo-transparent.png");
         break;
       case 5:
         $(".curr-title").fadeOut(function() {
           $(this).html("Contact Us").fadeIn(500)
+          $(this).addClass("has-text-white")
         });
-        $(".curr-title").addClass("has-text-white");
+        
+        break;
+    };
+  }
+
+  function updateMenuHighlight(index) {
+    switch (index) {
+      case 1:
+        $(".pagenav").removeClass("active_menu");  
+        $("#homebtn").addClass("active_menu");
+        break;
+      case 2:
+        $(".pagenav").removeClass("active_menu");  
+        $("#ventures").addClass("active_menu");
+        break;
+      case 3:
+        $(".pagenav").removeClass("active_menu");  
+        $("#core").addClass("active_menu");
+        break;
+      case 4:
+        $(".pagenav").removeClass("active_menu");  
+        $("#team").addClass("active_menu");
+        break;
+      case 5:
+        $(".pagenav").removeClass("active_menu");  
+        $("#contact").addClass("active_menu");
+        break;
+    };
+  }
+
+  function updateLogo(index) {
+    switch (index) {
+      case 1:
+        $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
+        break;
+      case 2:
+        $("#wdss-logo").attr("src", "img/logo-transparent.png");
+        break;
+      case 3:
+        $("#wdss-logo").attr("src", "img/logo-transparent.png");
+        break;
+      case 4:
+        $("#wdss-logo").attr("src", "img/logo-transparent.png");
+        break;
+      case 5:
+
         $("#wdss-logo").attr("src", "img/logo-transparent-white.png");
         break;
     };
   }
-  var type = parseInt(window.location.hash.substr(1));
-  getPageTitle(type);
+
+  var page_index = parseInt(window.location.hash.substr(1));
+  getPageTitle(page_index);
+  updateLogo(page_index);
   $(".test").click(function () {
     $(".curr-title").html($(this).html());
   })
@@ -163,9 +227,7 @@ $(document).ready(function () {
     $(".main").moveTo(5);
   });
 
-  $(".dropbtn").click(function () {
-    $(".dropdown-content2").slideToggle(200);
-  });
+  
   var glide_ambassadors = new Glide('.glide-ambassador', {
     type: 'carousel',
     startAt: 0,
@@ -310,9 +372,16 @@ $(document).ready(function () {
       animateCSS('#social-good-tile-image', 'fadeInRight');
       flag = true;
       }
+      $(".active_menu").toggleClass("active_menu");
+      if ($(".dropdown-content2").is(":visible")) {
+        $(".dropdown-content2").slideUp(200);
+      }
 
     },  // This option accepts a callback function. The function will be called before the page moves.
-    afterMove: function (index) { },   // This option accepts a callback function. The function will be called after the page moves.
+    afterMove: function (index) { 
+      updateLogo(index);
+      updateMenuHighlight(index);
+    },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
     responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
@@ -336,7 +405,9 @@ $(document).ready(function () {
   switchCards(true, null);
   
 });
-
+$(".dropbtn, .pagenav").click(function () {
+  $(".dropdown-content2").slideToggle(200);
+});
 var slideIndex = 1;
 var teamIndex = 1;
 var ambassadorIndex = 1;
