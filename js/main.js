@@ -161,7 +161,7 @@ $(document).ready(function () {
         break;
       case 2:
         $(".pagenav").removeClass("active_menu");  
-        $("#ventures").addClass("active_menu");
+        $("#venturesbtn").addClass("active_menu");
         break;
       case 3:
         $(".pagenav").removeClass("active_menu");  
@@ -211,7 +211,7 @@ $(document).ready(function () {
   });
 
 
-  $("#ventures").click(function () {
+  $("#venturesbtn").click(function () {
     $(".main").moveTo(2);
   });
 
