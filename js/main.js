@@ -1,10 +1,14 @@
 $(document).ready(function () {
-  // $('#ambassador-cards').css('display', 'none');
   window.scrollTo(0,1);
+  
   var dt = new Date();
   $("#copyright-year").html(dt.getFullYear());
 
-
+  /**
+   * switch between the exec cards and team cards
+   * @param {If ran on page load} startup 
+   * @param {html tag for either team or exec} elem 
+   */
   function switchCards(startup, elem) {
     if (startup) {
       $('#ambassador-cards').css("display","none");
@@ -65,22 +69,11 @@ $(document).ready(function () {
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
 
-      // var panel = this.nextElementSibling;
-      console.log(this.classList);
-
-      console.log($(this).hasClass("active"));
-      console.log(this.classList);
       if ($(this).hasClass("active")) {
-        // panel.style.maxHeight = null;
-        // $(this).animate({height:"70px"});
-        console.log("hgere");      this.classList.toggle("active");
-
+        this.classList.toggle("active");
         $(this).css("height", "70px");
       } else {      
-        hideAll();
-        
-        // panel.style.maxHeight = panel.scrollHeight + "px";
-        
+        hideAll();        
         $(this).css("height", ($(this).prop('scrollHeight') + 10) + 'px');
         this.classList.toggle("active");
 
@@ -89,10 +82,11 @@ $(document).ready(function () {
     });
   }
 
+  /**
+   * hide all open accordians
+   */
   function hideAll() {
     for (i = 0; i < acc.length; i++) {
-      // var panel = acc[i].nextElementSibling;
-      // panel.style.maxHeight = null;
 
       $(".accordion").css({height:"70px"});
       acc[i].classList.remove("active");
@@ -100,7 +94,10 @@ $(document).ready(function () {
 
   }
   
-  
+  /**
+   * change the page title using an animation depending on the page index
+   * @param {page index} index 
+   */
   function getPageTitle(index) {
     switch (index) {
       case 1:
@@ -136,6 +133,10 @@ $(document).ready(function () {
     };
   }
 
+  /**
+   * change the highlighted item on the menu, dependent on the page index
+   * @param {page index} index 
+   */
   function updateMenuHighlight(index) {
     switch (index) {
       case 1:
@@ -161,6 +162,11 @@ $(document).ready(function () {
     };
   }
 
+  /**
+   * update the logo to be either colour or in white dependent on the 
+   * background colour
+   * @param {page index} index 
+   */
   function updateLogo(index) {
     switch (index) {
       case 1:
