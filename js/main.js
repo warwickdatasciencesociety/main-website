@@ -3,24 +3,7 @@ $(document).ready(function () {
   window.scrollTo(0,1);
   var dt = new Date();
   $("#copyright-year").html(dt.getFullYear());
-  // $(".pagenav").click(function() {
-  //   $(".active_menu").toggleClass("active_menu");
-  //   $(this).toggleClass("active_menu");
-  // });
-  // Get the container element
-  // var btnContainer = document.getElementById("myDropdown");
 
-  // // Get all buttons with class="btn" inside the container
-  // var btns = btnContainer.getElementsByClassName("pagenav");
-
-  // // Loop through the buttons and add the active class to the current/clicked button
-  // for (var i = 0; i < btns.length; i++) {
-  //   btns[i].addEventListener("click", function() {
-  //     var current = document.getElementsByClassName("active_menu");
-  //     current[0].className = current[0].className.replace(" active_menu", "");
-  //     this.className += " active_menu";
-  //   });
-  // } 
 
   function switchCards(startup, elem) {
     if (startup) {
@@ -354,7 +337,7 @@ $(document).ready(function () {
     updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {
       getPageTitle(index);
-      if ($(".curr-title").text() == "Our Team") {
+      if ($(".curr-title").text() != "Our Team") {
         glide.pause();
         glide_ambassadors.pause();
 
@@ -395,7 +378,7 @@ $(document).ready(function () {
   glide.mount();
   glide_values.mount();
   
-  if ($(".curr-title").text() == "Our Team") {
+  if ($(".curr-title").text() != "Our Team") {
     glide.pause();
     glide_ambassadors.pause();
   }

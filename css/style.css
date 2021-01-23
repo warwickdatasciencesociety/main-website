@@ -624,7 +624,7 @@ a p{
   
   #podcast-tile-image {
     background-image: url("../img/ventures/podcast.jpeg");
-    background-size: contain;
+    background-size: cover;
   }
   
   #social-good-tile-image {
