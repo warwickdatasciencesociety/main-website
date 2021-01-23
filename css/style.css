@@ -9,10 +9,7 @@ body {
   color:#cccccc;
 }
 
-/* #ambassador-cards {
-  display:none;
-} */
-/* The dots/bullets/indicators */
+
 .dot, .dot-team, .dot-team-ambassador {
   cursor: pointer;
   height: 5px;

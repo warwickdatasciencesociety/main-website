@@ -191,28 +191,38 @@ $(document).ready(function () {
   var page_index = parseInt(window.location.hash.substr(1));
   getPageTitle(page_index);
   updateLogo(page_index);
-  $(".test").click(function () {
-    $(".curr-title").html($(this).html());
-  })
 
+  /**
+   * Change to home page on menu click
+   */
   $("#homebtn").click(function () {
     $(".main").moveTo(1);
   });
 
-
+  /**
+   * Change to ventures page on menu click
+   */
   $("#venturesbtn").click(function () {
     $(".main").moveTo(2);
   });
 
+  /**
+   * Change to core values page on menu click
+   */
   $("#core").click(function () {
     $(".main").moveTo(3);
   });
 
-  
+  /**
+   * Change to team page on menu click
+   */
   $("#team").click(function () {
     $(".main").moveTo(4);
   });
 
+  /**
+   * Change to contact page on menu click
+   */
   $("#contact").click(function () {
     $(".main").moveTo(5);
   });
@@ -296,6 +306,9 @@ $(document).ready(function () {
     }
   })
 
+  /**
+   * Remove gradient on top of image and display text
+   */
   $("#research-tile").hover(function() {
     
 
@@ -304,28 +317,37 @@ $(document).ready(function () {
     $("#venture-research-contents").fadeOut(220);
   });
 
+  /**
+   * Remove gradient on top of image and display text
+   */
   $("#teaching-tile").hover(function() {
     $("#venture-teaching-contents").filter(':not(:animated)').fadeIn(220);
-    // $("#venture-teaching-contents").css('display', 'block')
 
   }, function() {
     $("#venture-teaching-contents").fadeOut(220);
-    // $("#venture-teaching-contents").css('display', 'none')
-
   });
 
+  /**
+   * Remove gradient on top of image and display text
+   */
   $("#podcast-tile").hover(function() {
     $("#venture-podcast-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
     $("#venture-podcast-contents").fadeOut(220);
   });
 
+  /**
+   * Remove gradient on top of image and display text
+   */
   $("#careers-tile").hover(function() {
     $("#venture-careers-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
     $("#venture-careers-contents").fadeOut(220);
   });
 
+  /**
+   * Remove gradient on top of image and display text
+   */
   $("#social-good-tile").hover(function() {
     $("#venture-social-good-contents").filter(':not(:animated)').fadeIn(220);
   }, function() {
@@ -406,7 +428,10 @@ showSlidesTeam(teamIndex);
 showSlidesAmbassadors(ambassadorIndex);
 
 
-
+/**
+ * Change slide page viewer for core values
+ * @param {number of slides} n 
+ */
 function showSlides(n) {
   var i;
   var dots = document.getElementsByClassName("dot");
@@ -419,7 +444,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " glide-active";
 }
 
-
+/**
+ * Change slide page viewer for exec
+ * @param {number of slides} n 
+ */
 function showSlidesTeam(n) {
   var i;
   var dots = document.getElementsByClassName("dot-team");
@@ -432,6 +460,10 @@ function showSlidesTeam(n) {
   dots[teamIndex-1].className += " glide-active";
 }
 
+/**
+ * Change slide page viewer for ambassadors
+ * @param {number of slides} n 
+ */
 function showSlidesAmbassadors(n) {
   var i;
   var dots = document.getElementsByClassName("dot-team-ambassador");
