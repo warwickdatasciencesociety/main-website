@@ -47,9 +47,7 @@ body {
   background-color: #c2c2c2;
 }
 
-#home-title {
-  /* display: none; */
-}
+
 :root {
   --animate-delay: 0.1s;
 }
@@ -89,7 +87,6 @@ body {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 32px;
@@ -563,6 +560,7 @@ a p{
     display: none;
   }
 }
+
 @media  screen 
   and (min-width: 641px) 
   
