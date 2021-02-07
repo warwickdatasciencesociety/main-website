@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/b0e45b6dae.js"></script>
     <link rel="icon" target="_blank" href="img/logo-round.png">
     <link rel="apple-touch-icon" href="images/logo.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -90,6 +92,10 @@ content="Warwick, Data, Science, Society, WDSS, Student, Students, University, C
             <i class="fa fa-copyright" aria-hidden="true"></i> <span id="copyright-year"> 2020</span> Warwick Data Science Society
         </div>
     </section>
+    <script>
+      var dt = new Date();
+      $("#copyright-year").html(dt.getFullYear());
+    </script>
 </body>
 
 </html>
