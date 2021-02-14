@@ -77,6 +77,9 @@ body {
 
 }
 
+#teaching-tile-image {
+  height: 100%;
+}
 
 .pagenav {
   background-color: #e0e0e0;
@@ -216,7 +219,6 @@ hr {
   background-color: rgba(0,0,0,0);
   width: 32vw;
 }
-
 #teaching-tile-image-mobile {
   background-image: url("img/ventures/teaching-grad.jpg")
 }
