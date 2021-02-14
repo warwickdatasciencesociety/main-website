@@ -212,7 +212,7 @@ hr {
 #research-tile , #teaching-tile 
 {
   background-color: rgba(0,0,0,0);
-  width: 45vw;
+  /* width: 45vw; */
 }
 
  #social-good-tile , #careers-tile , #podcast-tile {
