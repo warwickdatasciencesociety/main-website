@@ -209,7 +209,7 @@ hr {
   /* background-size: cover; */
 }
 
-/* #research-tile , #teaching-tile 
+#research-tile , #teaching-tile 
 {
   background-color: rgba(0,0,0,0);
   width: 45vw;
@@ -218,7 +218,7 @@ hr {
  #social-good-tile , #careers-tile , #podcast-tile {
   background-color: rgba(0,0,0,0);
   width: 32vw;
-} */
+}
 #teaching-tile-image-mobile {
   background-image: url("img/ventures/teaching-grad.jpg")
 }
