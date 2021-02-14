@@ -9,6 +9,10 @@ body {
   color:#cccccc;
 }
 
+#podcast-tile-image {
+  display: -webkit-flex; /* NEW */
+  display: flex;
+}
 
 .dot, .dot-team, .dot-team-ambassador {
   cursor: pointer;
