@@ -9,7 +9,7 @@ body {
   color:#cccccc;
 }
 
-#podcast-tile-image {
+#research-tile-image {
   display: -webkit-flex; /* NEW */
   display: flex;
 }
