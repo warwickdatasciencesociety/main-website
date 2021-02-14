@@ -231,12 +231,10 @@ hr {
 
 @media (max-width: 700px) {
   #research-tile {
-    min-height: 0vh;
     font-size: 10px;
 
   }
   #careers-tile {
-    min-height: 0vh;
     font-size: 10px;
  
   }
