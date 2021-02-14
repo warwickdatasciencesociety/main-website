@@ -9,7 +9,7 @@ body {
   color:#cccccc;
 }
 
-#research-tile-image {
+#teaching-tile-image {
   display: -webkit-flex; /* NEW */
   display: flex;
 }
