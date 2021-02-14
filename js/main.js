@@ -310,11 +310,13 @@ $(document).ready(function () {
    * Remove gradient on top of image and display text
    */
   $("#research-tile").hover(function() {
-    
-
     $("#venture-research-contents").filter(':not(:animated)').fadeIn(220);
+    $("#research-tile-image").css("z-index", "50");
+    blurImage("#research-image", 4, 1.05);
   }, function() {
     $("#venture-research-contents").fadeOut(220);
+    $("#research-tile-image").css("z-index", "auto");
+    blurImage("#research-image", 0, 1);
   });
 
   /**
@@ -322,18 +324,26 @@ $(document).ready(function () {
    */
   $("#teaching-tile").hover(function() {
     $("#venture-teaching-contents").filter(':not(:animated)').fadeIn(220);
-
+    $("#teaching-tile-image").css("z-index", "50");
+    blurImage("#teaching-image", 4, 1.05);
   }, function() {
     $("#venture-teaching-contents").fadeOut(220);
+    $("#teaching-tile-image").css("z-index", "auto");
+    blurImage("#teaching-image", 0, 1);
   });
+
 
   /**
    * Remove gradient on top of image and display text
    */
   $("#podcast-tile").hover(function() {
-    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn(220);
+    $("#venture-podcast-contents").filter(':not(:animated)').fadeIn(330);
+    $("#podcast-tile-image").css("z-index", "50");
+    blurImage("#podcast-image", 4, 1.05);
   }, function() {
-    $("#venture-podcast-contents").fadeOut(220);
+    $("#venture-podcast-contents").fadeOut(330);
+    blurImage("#podcast-image", 0, 1);
+    $("#podcast-tile-image").css("z-index", "auto");
   });
 
   /**
@@ -341,8 +351,12 @@ $(document).ready(function () {
    */
   $("#careers-tile").hover(function() {
     $("#venture-careers-contents").filter(':not(:animated)').fadeIn(220);
+    $("#careers-tile-image").css("z-index", "50");
+    blurImage("#careers-image", 4, 1.05);
   }, function() {
     $("#venture-careers-contents").fadeOut(220);
+    blurImage("#careers-image", 0, 1);
+    $("#careers-tile-image").css("z-index", "auto");
   });
 
   /**
@@ -350,8 +364,10 @@ $(document).ready(function () {
    */
   $("#social-good-tile").hover(function() {
     $("#venture-social-good-contents").filter(':not(:animated)').fadeIn(220);
+    blurImage("#social-good-image", 4, 1.05);
   }, function() {
     $("#venture-social-good-contents").fadeOut(220);
+    blurImage("#social-good-image", 0, 1);
   });
 
   flag = false;
@@ -474,4 +490,17 @@ function showSlidesAmbassadors(n) {
       dots[i].className = dots[i].className.replace(" glide-active", "");
   }
   dots[ambassadorIndex-1].className += " glide-active";
+}
+
+function blurImage(image, blurStrength, scaleAmount) {
+  let blur = "blur("+blurStrength+"px)";
+  let scale = "scale("+scaleAmount+")";
+
+  $(image).css({
+    "filter": blur,
+    "transition":'0.33s',
+    'webkit-transition':'0.33s',
+    '-moz-transition': '0.33s',
+    'transform': scale,
+  });
 }
