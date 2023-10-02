@@ -232,8 +232,8 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: 4500,
-    dragThreshold: 1,
+    autoplay: 5000,
+    dragThreshold: 3,
     keyboard: false,
     breakpoints: {
       1023: {
@@ -249,8 +249,8 @@ $(document).ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    autoplay: 4500,
-    dragThreshold: 1,
+    autoplay: 5000,
+    dragThreshold: 3,
     keyboard: false,
     breakpoints: {
       1023: {
@@ -261,6 +261,39 @@ $(document).ready(function () {
       }
     }
   })
+
+
+
+  glide_ambassadors.on('run.before', evt => {
+    const scrollSteps = 3;
+    if (evt.direction === '>') {
+      evt.steps = -scrollSteps;
+  } else if (evt.direction === '<') {
+      evt.steps = scrollSteps;
+  }
+});
+
+glide.on('run.before', evt => {
+  const scrollSteps = 3;
+  if (evt.direction === '>') {
+    evt.steps = -scrollSteps;
+} else if (evt.direction === '<') {
+    evt.steps = scrollSteps;
+}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   glide.on('run', function(e) {
     if (e.direction == "<") {
@@ -372,15 +405,23 @@ $(document).ready(function () {
 
   flag = false;
 
+
   $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
     easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-    animationTime: 750,             // AnimationTime let you define how long each section takes to animate
+    animationTime: 2500,             // AnimationTime let you define how long each section takes to animate
     pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
     updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
     beforeMove: function (index) {
-      getPageTitle(index);
+
+      getPageTitle(index)
+
+      //attempt to vary the animationTime separately for the ventures page
+      var targetSection = $(".main section").eq(index-1);
+      var venturesSection = $("#ventures");
+      var animationTime = (venturesSection.is(targetSection)) ? 11000 : 750;
+
       if ($(".curr-title").text() != "Our Team") {
         glide.pause();
         glide_ambassadors.pause();
@@ -393,7 +434,7 @@ $(document).ready(function () {
       }  
       
       if (index == "2" && !flag) {
-      animateCSS('#research-tile-image', 'fadeInDown');
+      animateCSS('#research-tile-image', 'fadeInLeft');
       animateCSS('#teaching-tile-image', 'fadeInRight');
       animateCSS('#podcast-tile-image', 'fadeInLeft');
       animateCSS('#careers-tile-image', 'fadeInUp');
@@ -404,6 +445,8 @@ $(document).ready(function () {
       if ($(".dropdown-content2").is(":visible")) {
         $(".dropdown-content2").slideUp(200);
       }
+      console.log(animationTime)
+      return animationTime;
 
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) { 
@@ -417,6 +460,8 @@ $(document).ready(function () {
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
   });
+
+  
 
   glide_ambassadors.mount();
   glide.mount();
