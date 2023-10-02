@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <!-- implementing the logo in the home section that can be used to get to the home section -->
   <article class="media page-title curr-page-title">
     <figure class="media-left">
       <p class="image is-64x64">
@@ -55,7 +56,7 @@
 
   </article>
 
-
+<!-- designing the drop down menu -->
   <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div id="myDropdown" class="dropdown-content2">
@@ -66,6 +67,8 @@
       <a id="contact" class="pagenav" href="#contact">Contact Us</a>
     </div>
   </div>
+
+  <!-- first scrolling section of the webpage: Home. Includes the title, slogan and logo (implemented above). -->
   <div class="main">
     <section id="home" class="ourteam-style hero  is-fullheight next">
       <div class="hero-body">
@@ -81,6 +84,10 @@
       </div>
     </section>
 
+      <!-- second scrolling section of the webpage: Ventures. Includes the sections: Research, Teaching, Podcast, Careers, Social Good. -->
+      <!-- This section is repeated in the code - this first part accommodates for mobile users, the main difference in content
+            is the capitalisation of titles and sizes of containers. -->
+    <!-- MOBILE SECTION START -->
     <section id="ventures" class="ourteam-style hero   is-fullheight next">
       <div class="hero-body">
         <div class="container ventures-mobile">
@@ -133,9 +140,14 @@
           </div>
 
         </div>
+
+        <!-- MOBILE SECTION END -->
+
+        
+        <!-- This is the second part of the repeated section, for the main webpage. Same content, the titles 
+              are just completely capitalised and the containers are adjusted for a different layout on the webpage. -->
+        <div class="ventures">
         <div class="container is-fluid ventures-desktop">
-
-
 
           <div class="tile is-ancestor">
             <div class="tile is-vertical is-12">
@@ -227,11 +239,17 @@
 
           </div>
         </div>
+        </div>
       </div>
 
     </section>
 
+    <!-- third scrolling section of the webpage: Values. -->
+    <!-- This section is repeated in the code - this first part accommodates for mobile users, the main difference in content
+          is the order of the 'values' and how they are displayed, as one is shown at a time with a
+          scrolling feature. -->
 
+    <!-- MOBILE SECTION START -->
     <section id="corevalues" class="ourteam-style hero   is-fullheight next">
 
       <div class="hero-body">
@@ -264,6 +282,7 @@
 
 
                         <p class="has-text-centered ">
+                          <!--  I think we should remove the term 'ugly' and promote a more positive and exciting viewpoint of the technical side of data science. -->
                           We do not shy away from the ugly, technical sides of data science, aiming to portray a full
                           picture of the field​
                         </p>
@@ -318,6 +337,12 @@
 
             </div>
           </div>
+
+          <!-- MOBILE SECTION END -->
+
+          <!-- This is the second part of the repeated section, for the main webpage. Same content, the values are 
+              just all displayed at once with no scrolling feature, in a different order. -->
+          
           <div class=" columns  is-multiline  has-text-centered regular-core" data-v-15d98976="">
             <div class="column is-one-fifth-desktop is-12-mobile is-6-tablet " data-v-15d98976="">
               <figure class="image value-icons">
@@ -356,7 +381,7 @@
               <p class="regular-values-desc mb-3 title  is-size-5 is-size-6-mobile ">No Fear of the Technical</p>
 
               <p class="">
-                We do not shy away from the ugly, technical sides of data science, aiming to portray a full picture of
+                We do not shy away from the technical sides of data science, aiming to portray a full picture of
                 the field​
               </p>
             </div>
@@ -380,7 +405,9 @@
       </div>
     </section>
 
-
+    
+    <!-- fourth scrolling section of the webpage: Our Team. Includes the sections: Exec and Team. -->
+    <!-- IMPORTANT - This section requires updating of new roles, team members and their photos. -->
 
     <section id="ourteam" class="ourteam-style hero  is-fullheight next ">
       <div class="hero-body">
@@ -396,11 +423,14 @@
               </div>
               <div class="level-item">
                 <h2 class="title is-4">
-                  <!--
-                  <a id="display-ambassadors" class="select-team is-hidden-team" href="#">
+
+                  
+                  <!-- <a id="display-ambassadors" class="select-team is-hidden-team" href="#">
                     Team
-                  </a>
-                  -->
+                  </a> -->
+                 
+
+
                 </h2>
               </div>
             </div>
@@ -413,7 +443,7 @@
           </div>
             
           <div id="ambassador-cards">
-            
+            <!-- not in use, old ambassador format glide -->
             <div class="glide-ambassador">
               <div class="glide__track" data-glide-el="track">
                 
@@ -423,16 +453,16 @@
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/ambassador/umar.png" alt="Umar Abdul-Aziz headshot">
+                          <img src="" alt="">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class=" title is-4 has-text-white">Umar Abdul-Aziz</p>
-                        <p class=" subtitle has-text-white">Chemistry Ambassador</p>
-                        <a target="_blank" href="https://www.linkedin.com/in/umar-abdul-aziz123/">
+                        <p class=" title is-4 has-text-white"></p>
+                        <p class=" subtitle has-text-white"></p>
+                        <a target="_blank" href="">
                           <i class="fab fa-linkedin has-text-white"></i>
                         </a>&nbsp;
-                        <a target="_blank" href="https://github.com/umaraa612">
+                        <a target="_blank" href="">
                           <i class="fab fa-github card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -440,313 +470,18 @@
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/umar.png"
-                          alt="Umar Abdul-Aziz headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src=""
+                          alt="">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Umar Abdul-Aziz</p>
-                            <p class=" subtitle has-text-white">Chemistry Ambassador</p>
+                            <p class=" title is-5 has-text-white"></p>
+                            <p class=" subtitle has-text-white"></p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/umar-abdul-aziz123/">
+                              href="">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>&nbsp;
                             <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/umaraa612">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-                  
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/amr.png" alt="Amr Abdelmotteleb headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Amr Abdelmotteleb</p>
-                        <p class="subtitle has-text-white">Mathematics & Statistics Ambassador</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/amr-abdelmotteleb-3574691ba/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/amrabdelmotteleb">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/amr.png"
-                          alt="Amr Abdelmotteleb headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class=" title is-5 has-text-white">Amr Abdelmotteleb</p>
-                            <p class=" subtitle has-text-white">Mathematics & Statistics Ambassador</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/amr-abdelmotteleb-3574691ba/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/amrabdelmotteleb">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-                  
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/szymon.png" alt="Szymon Litwin headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Szymon Litwin</p>
-                        <p class="subtitle has-text-white">Econ & Finance Ambassador</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/szymon-litwin-38a9021bb/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/szylit">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/szymon.png"
-                          alt="Szymon Litwin headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class=" title is-6 has-text-white">Szymon Litwin</p>
-                            <p class=" subtitle  has-text-white">Econ & Finance Ambassador</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/szymon-litwin-38a9021bb/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/szylit">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/tasneem.png" alt="Tasneem Amijee headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Tasneem Amijee</p>
-                        <p class="subtitle has-text-white">Politics & Social Sciences Ambassador</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/tasneem-amijee-5147a9a1/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/tasneem-amijee">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/tasneem.png"
-                          alt="Tasneem Amijee headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class=" title is-6 has-text-white">Tasneem Amijee</p>
-                            <p class=" subtitle  has-text-white">Politics & Social Sciences Ambassador</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/tasneem-amijee-5147a9a1/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/tasneem-amijee">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-                  
-
-                  
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/maclain.png" alt="Maclain O" Meara headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Maclain O"Meara</p>
-                        <p class="subtitle has-text-white">Physics &#38; Engineering Ambassador</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/maclain-o/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/MMOMeara">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/maclain.jpg" alt="Maclain O
-                          Meara headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class="title is-5 has-text-white">Maclain O"Meara</p>
-                            <p class="subtitle has-text-white">Physics &#38; Engineering Ambassador</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/maclain-o/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/MMOMeara">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li> 
-
-                  
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/larabella.jpg" alt="Larabella Myers headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Larabella Myers</p>
-                        <p class="subtitle has-text-white">DataBasic Segment Host</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/larabella-myers/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>
-
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/larabella.jpg"
-                          alt="Larabella Myers headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class="title is-5 has-text-white">Larabella Myers</p>
-                            <p class="subtitle has-text-white">DataBasic Host</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/larabella-myers/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/artemy.png" alt="Artemy Bulavin headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Artemy Bulavin</p>
-                        <p class="subtitle has-text-white">BackEnd Developer</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/artemy-bulavin-79801a15a/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/abulavin">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/artemy.png"
-                          alt="Artemy Bulavin headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class="title is-5 has-text-white">Artemy Bulavin</p>
-                            <p class="subtitle has-text-white">BackEnd Developer</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/artemy-bulavin-79801a15a/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/abulavin">
-                              <i class="fab fa-github card-fa has-text-white"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-                  
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/ambassador/justin.png" alt="Justin Tan headshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Justin Tan</p>
-                        <p class="subtitle has-text-white">FrontEnd Developer</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/justin-tan-hy/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/Justanhy">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/ambassador/justin.png"
-                          alt="Justin Tan headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class="title is-5 has-text-white">Justin Tan</p>
-                            <p class="subtitle has-text-white">FrontEnd Developer</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/justin-tan-hy/">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/Justanhy">
+                              href="">
                               <i class="fab fa-github card-fa has-text-white"></i>
                             </a>
                           </div>
@@ -768,7 +503,8 @@
 
             </div>
           </div>
-          
+
+           <!-- This person or role cannot be found on site -->
           <div id="exec-cards">
             <div class="glide">
               <div class="glide__track" data-glide-el="track">
@@ -777,71 +513,35 @@
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Alexandru.jpeg" alt="Alexandru Pascu headshot">
+                          <img src="img/team/NewTeamPhotos/Alexandru Pascu - Co-President.jpg" alt="Alexandru Pascu headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
                         <p class=" title is-4 has-text-white">Alexandru Pascu</p>
-                        <p class=" subtitle has-text-white">Co-President</p>
+                        <p class=" subtitle has-text-white">President</p>
                         <a target="_blank" href="https://www.linkedin.com/in/alexandru-pascu/">
-                          <i class="fab fa-linkedin has-text-white"></i>
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/AlexandruPascu">
+                          <i class="fab fa-github card-fa has-text-white"></i>
                         </a>
                       </div>
                     </div>
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Alexandru.jpeg"
-                          alt="Alexandru Pascu headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Alexandru Pascu - Co-President.jpg"
+                          alt="Alexandru Pascu headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
                             <p class=" title is-5 has-text-white">Alexandru Pascu</p>
-                            <p class=" subtitle has-text-white">Co-President</p>
+                            <p class=" subtitle has-text-white">President</p>
                             <a style="position:absolute; bottom:0" target="_blank"
                               href="https://www.linkedin.com/in/alexandru-pascu/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-
-
-                  <li class="glide__slide">
-                    <div class="vertical-card card card-wdss">
-                      <div class="card-image">
-                        <figure class="image is-1by1">
-                          <img src="img/team/Sean.jpg" alt="Sean Koh headhshot">
-                        </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Sean Koh</p>
-                        <p class="subtitle has-text-white">Co-President</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/sean-michael-koh-1aa37b204/">
-                          <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/SeanMKoh">
-                          <i class="fab fa-github card-fa has-text-white"></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="mobile-horizontal-card card card-wdss">
-                      <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Sean.jpg"
-                          alt="Sean Koh headshot">
-                        <div class="media-content ml-2 mt-2">
-                          <div class="content">
-                            <p class=" title is-5 has-text-white">Sean Koh</p>
-                            <p class=" subtitle has-text-white">Co-President</p>
-                            <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/sean-michael-koh-1aa37b204//">
-                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
                             <a style="position:absolute; bottom:0; left: 25vw" target="_blank"
-                              href="https://github.com/SeanMKoh">
+                              href="https://github.com/AlexandruPascu">
                               <i class="fab fa-github card-fa has-text-white"></i>
                             </a>
                           </div>
@@ -850,20 +550,159 @@
                     </div>
                   </li>
 
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Mominah Ilyas.jpg" alt="Mominah Ilyas headhshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Mominah Ilyas</p>
+                        <p class="subtitle has-text-white">Vice President</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/mominah-ilyas-b15226265">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>&nbsp;
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Mominah Ilyas.jpg"
+                          alt="Mominah Ilyas headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Mominah Ilyas</p>
+                            <p class=" subtitle has-text-white">Vice President</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/mominah-ilyas-b15226265">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>&nbsp;
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+                  
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Kitty Ballantine.jpg" alt="Kitty Ballantine headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class=" title is-4 has-text-white">Kitty Ballantine</p>
+                        <p class=" subtitle has-text-white">Treasurer</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/kitty-ballantine-b294bb216/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                      </div>
+                    </div>
+        
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Kitty Ballantine.jpg"
+                          alt="Kitty Ballantine headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Kitty Ballantine</p>
+                            <p class=" subtitle has-text-white">Treasurer</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/kitty-ballantine-b294bb216/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
 
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Arjiv.jpeg" alt="Arjiv Jivithkumar headshot">
+                          <img src="img/team/NewTeamPhotos/Aarushi_Bansal.jpg" alt="Aarushi Bansal headhshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Arjiv Jivithkumar</p>
+                        <p class="title is-4 has-text-white">Aarushi Bansal</p>
+                        <p class="subtitle has-text-white">Co-Head Outreach</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/aarushi-bansal-29b157201">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>&nbsp;
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Aarushi_Bansal.jpg"
+                          alt="Aarushi Bansal headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Aarushi Bansal</p>
+                            <p class=" subtitle has-text-white">Co-Head Outreach</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/aarushi-bansal-29b157201">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>&nbsp;
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Ihina Bhakta.jpg" alt="Ihina Bhakta headhshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Ihina Bhakta</p>
+                        <p class="subtitle has-text-white">Co-Head Outreach</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/ihina-bhakta-646039200/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>&nbsp;
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Ihina Bhakta.jpg"
+                          alt="Ihina Bhakta headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Ihina Bhakta</p>
+                            <p class=" subtitle has-text-white">Co-Head Outreach</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/ihina-bhakta-646039200/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>&nbsp;
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Ines Rouaghe.jpg" alt="Ines Rouaghe headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Ines Rouaghe</p>
                         <p class="subtitle has-text-white">Secretary</p>
 
                         <a target="_blank"
-                          href="https://www.linkedin.com/in/arjiv/">
+                          href="https://www.linkedin.com/in/in%C3%A8s-rouaghe-08702b216/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -871,14 +710,14 @@
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Arjiv.jpeg"
-                          alt="Arjiv Jivithkumar headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Ines Rouaghe.jpg"
+                          alt="Ines Rouaghe headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Arjiv Jivithkumar</p>
+                            <p class=" title is-5 has-text-white">Ines Rouaghe</p>
                             <p class=" subtitle has-text-white">Secretary</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/arjiv/">
+                              href="https://www.linkedin.com/in/in%C3%A8s-rouaghe-08702b216/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
                           </div>
@@ -887,19 +726,19 @@
                     </div>
 
                   </li>
-                  <li class="glide__slide">
 
+                  <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Osandi.jpeg" class="responsive-img " alt="Osandi Payagala headshot">
+                          <img src="img/team/NewTeamPhotos/Arun Tandon.jpg" class="responsive-img " alt="Arun Tandon headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Osandi Payagala</p>
+                        <p class="title is-4 has-text-white">Arun Tandon</p>
                         <p class="subtitle has-text-white">Education Lead</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/osandi-payagala-171310223/">
+                        <a target="_blank" href="https://www.linkedin.com/in/arun-tandon-4a7696269/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -907,14 +746,14 @@
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Osandi.jpeg"
-                          alt="Osandi Payagala headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Arun Tandon.jpg"
+                          alt="Arun Tandon headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Osandi Payagala</p>
+                            <p class=" title is-5 has-text-white">Arun Tandon</p>
                             <p class=" subtitle has-text-white">Education Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/osandi-payagala-171310223/">
+                              href="https://www.linkedin.com/in/arun-tandon-4a7696269/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
                           </div>
@@ -922,35 +761,34 @@
                       </article>
                     </div>
                   </li>
-                  <!--
+                 
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-
-                          <img src="img/team/Charis.jpeg" class="responsive-img " alt="Charis Ellõ Regalado headshot">
+                          <img src="img/team/NewTeamPhotos/Ambar-Video Lead.JPG" class="responsive-img " alt="Ambar Jin headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Charis Ellõ Regalado</p>
-                        <p class="subtitle has-text-white">Marketing Lead</p>
+                        <p class="title is-4 has-text-white">Ambar Jin</p>
+                        <p class="subtitle has-text-white">Educational Video Lead</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/charis-ell%C3%B5-regalado-3a6962193/">
+                        <a target="_blank" href="https://pt.linkedin.com/in/ambar-jin-81309b1aa?original_referer=https%3A%2F%2Fwww.google.pt%2F">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
                     </div>
-                    
+
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Charis.jpeg"
-                          alt="Charis Ellõ Regalado headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Ambar-Video Lead.JPG"
+                          alt="Ambar Jin headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Charis Ellõ Regalado</p>
-                            <p class=" subtitle has-text-white">Marketing Lead</p>
+                            <p class=" title is-5 has-text-white">Ambar Jin</p>
+                            <p class=" subtitle has-text-white">Educational Video Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/charis-ell%C3%B5-regalado-3a6962193/">
+                              href="https://pt.linkedin.com/in/ambar-jin-81309b1aa?original_referer=https%3A%2F%2Fwww.google.pt%2F">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
                           </div>
@@ -958,62 +796,131 @@
                       </article>
                     </div>
                   </li>
-                
 
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Claudia.jpg" class="responsive-img " alt="Claudia Viaro headshot">
+                          <img src="img/team/NewTeamPhotos/Evyanne Ewusie-Educational Content Creator.jpg" class="responsive-img " alt="Evyanne Ewusie headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Claudia Viaro</p>
+                        <p class="title is-4 has-text-white">Evyanne Ewusie</p>
+                        <p class="subtitle has-text-white">Educational Content Creator</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/evyanneewusie/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/EvyanneE">
+                          <i class="fab fa-github card-fa has-text-white"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Evyanne Ewusie-Educational Content Creator.jpg"
+                          alt="Evyanne Ewusie headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Evyanne Ewusie</p>
+                            <p class=" subtitle has-text-white">Educational Content Creator</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/evyanneewusie">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                            <a style="position:absolute; bottom:0; left: 25vw" target="_blank"
+                              href="https://github.com/EvyanneE">
+                              <i class="fab fa-github card-fa has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Omer Amin.jpg" class="responsive-img " alt="Omer Amin headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Omer Amin</p>
+                        <p class="subtitle has-text-white">Educational Content Creator</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/omer-amin-2462041b3">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Omer Amin.jpg"
+                          alt="Omer Amin headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Omer Amin</p>
+                            <p class=" subtitle has-text-white">Educational Content Creator</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/omer-amin-2462041b3">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Peter Hyland.jpg" class="responsive-img " alt="Peter Hyland headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Peter Hyland</p>
                         <p class="subtitle has-text-white">Research Lead</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/claudia-viaro/">
+                        <a target="_blank" href="https://www.linkedin.com/in/peter-hyland-53a2951ba/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/claudia-viaro/">
-                          <i class="fab fa-github card-fa has-text-white"></i>
                         </a>
                       </div>
                     </div>
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Claudia.jpg"
-                          alt="Claudia Viaro headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Peter Hyland.jpg"
+                          alt="Peter Hyland headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Claudia Viaro</p>
+                            <p class=" title is-5 has-text-white">Peter Hyland</p>
                             <p class=" subtitle has-text-white">Research Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/claudia-viaro/">
+                              href="https://www.linkedin.com/in/peter-hyland-53a2951ba/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/claudia-viaro">
-                              <i class="fab fa-github card-fa has-text-white"></i>
                             </a>
                           </div>
                         </div>
                       </article>
                     </div>
                   </li>
-                  -->
+
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Paul.jpeg" class="responsive-img " alt="Paul Maftei headshot">
+                          <img src="img/team/NewTeamPhotos/Lish Lawrence.jpg" class="responsive-img " alt="Elisha Lawrence headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Paul Maftei</p>
-                        <p class="subtitle has-text-white">Speaker Events Lead</p>
+                        <p class="title is-4 has-text-white">Elisha Lawrence</p>
+                        <p class="subtitle has-text-white">Research Project Manager</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/paul-maftei-b90570246/">
+                        <a target="_blank" href="https://www.linkedin.com/in/lishlawrence/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -1021,14 +928,14 @@
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Paul.jpeg"
-                          alt="Paul Maftei headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Lish Lawrence.jpg"
+                          alt="Elisha Lawrence headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Paul Maftei</p>
-                            <p class=" subtitle has-text-white">Speaker Events Lead</p>
+                            <p class=" title is-5 has-text-white">Elisha Lawrence</p>
+                            <p class=" subtitle has-text-white">Research Project Manager</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/paul-maftei-b90570246/">
+                              href="https://www.linkedin.com/in/lishlawrence/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
                           </div>
@@ -1037,19 +944,18 @@
                     </div>
                   </li>
 
-
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Geena.jpeg" class="responsive-img " alt="Geena Barthipan headshot">
+                          <img src="img/team/NewTeamPhotos/Vidhi Nayyar.jpg" class="responsive-img " alt="Vidhi Nayyar headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Geena Barthipan</p>
-                        <p class="subtitle has-text-white">Corporate Events Lead</p>
+                        <p class="title is-4 has-text-white">Vidhi Nayyar</p>
+                        <p class="subtitle has-text-white">Research Project Manager</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/geena-barthipan/">
+                        <a target="_blank" href="">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -1057,14 +963,14 @@
 
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Geena.jpeg"
-                          alt="Geena Barthipan headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Vidhi Nayyar.jpg"
+                          alt="Vidhi Nayyar headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Geena Barthipan</p>
-                            <p class=" subtitle has-text-white">Corporate Events Lead</p>
+                            <p class=" title is-5 has-text-white">Vidhi Nayyar</p>
+                            <p class=" subtitle has-text-white">Research Project Manager</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/geena-barthipan/">
+                              href="">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
                           </div>
@@ -1073,81 +979,114 @@
                     </div>
                   </li>
 
-                  <!--
+
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
 
-                          <img src="img/team/brandusa.jpg" class="responsive-img " alt="Brandusa Draghici headshot">
+                          <img src="img/team/NewTeamPhotos/George Vernon-Evans.jpg" class="responsive-img " alt="George Vernon-Evans headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Brandusa Draghici</p>
-                        <p class="subtitle has-text-white">Treasurer</p>
+                        <p class="title is-4 has-text-white">George Vernon-Evans</p>
+                        <p class="subtitle has-text-white">Podcast Creator</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/brandusa-draghici-5b0a84147/">
+                        <a target="_blank" href="https://www.linkedin.com/in/george-vernon-evans/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
-                        <a target="_blank" href="https://github.com/brandusadrg/">
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/George Vernon-Evans.jpg"
+                          alt="George Vernon-Evans headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">George Vernon-Evans</p>
+                            <p class=" subtitle has-text-white">Podcast Creator</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/george-vernon-evans/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Nadia Jaufarally.jpeg" class="responsive-img " alt="Nadia Jaufarally headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Nadia Jaufarally</p>
+                        <p class="subtitle has-text-white">Tech Lead</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/nadiaj7860">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/Jaufacake">
                           <i class="fab fa-github card-fa has-text-white"></i>
                         </a>
                       </div>
-                    </div>
 
+                    </div>
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/brandusa.jpg"
-                          alt="Brandusa Draghici headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Nadia Jaufarally.jpeg"
+                          alt="Nadia Jaufarally headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Brandusa Draghici</p>
-                            <p class=" subtitle has-text-white">Treasurer</p>
+                            <p class=" title is-5 has-text-white">Nadia Jaufarally</p>
+                            <p class=" subtitle has-text-white">Tech Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/brandusa-draghici-5b0a84147/">
+                              href="https://www.linkedin.com/in/nadiaj7860">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
-                            <a style="position:absolute; bottom:0; left: 30vw" target="_blank"
-                              href="https://github.com/brandusadrg/">
+                            </a>
+                            <a style="position:absolute; bottom:0; left: 25vw" target="_blank"
+                              href="https://github.com/Jaufacake">
                               <i class="fab fa-github card-fa has-text-white"></i>
                             </a>
                           </div>
                         </div>
                       </article>
                     </div>
-                  </li> -->
-
+                  </li>
 
                   <li class="glide__slide">
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-
-                          <img src="img/team/Ria.jpeg" class="responsive-img " alt="Ria Govila headshot">
+                          <img src="" class="responsive-img " alt="Anais Shakhidi headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Ria Govila</p>
-                        <p class="subtitle has-text-white">Podcast Lead</p>
-
-                        <a target="_blank" href="https://www.linkedin.com/in/ria-govila-50878976/">
+                        <p class="title is-4 has-text-white">Anais Shakhidi</p>
+                        <p class="subtitle has-text-white">Tech Lead</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/anais-shakhidi-49485a25b/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
-                    </div>
 
+                    </div>
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Ria.jpeg"
-                          alt="Ria Govila headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src=""
+                          alt="Anais Shakhidi headshot", style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Ria Govila</p>
-                            <p class=" subtitle has-text-white">Podcast Lead</p>
+                            <p class=" title is-5 has-text-white">Anais Shakhidi</p>
+                            <p class=" subtitle has-text-white">Tech Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/ria-govila-50878976/">
+                              href="https://www.linkedin.com/in/anais-shakhidi-49485a25b/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
+                           
                           </div>
                         </div>
                       </article>
@@ -1159,14 +1098,14 @@
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-                          <img src="img/team/Krzysztof.jpeg" class="responsive-img " alt="Krzysztof Pietruszka headshot">
+                          <img src="img/team/NewTeamPhotos/MaddyPedder.JPG" class="responsive-img " alt="Maddy Pedder headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-4 has-text-white">Krzysztof Pietruszka</p>
-                        <p class="subtitle has-text-white">Sports Analytics Lead</p>
+                        <p class="title is-4 has-text-white">Maddy Pedder</p>
+                        <p class="subtitle has-text-white">Social Sec</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/krzysztof-pietruszka-0409/">
+                        <a target="_blank" href="https://www.linkedin.com/in/maddy-pedder-04a8831bb/">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
                         </a>
                       </div>
@@ -1174,16 +1113,387 @@
                     </div>
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Krzysztof.jpeg"
-                          alt="Krzysztof Pietruszka headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/MaddyPedder.JPG"
+                          alt="Maddy Pedder headshot" style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Krzysztof Pietruszka</p>
+                            <p class=" title is-5 has-text-white">Maddy Pedder</p>
+                            <p class=" subtitle has-text-white">Social Sec</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/maddy-pedder-04a8831bb/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Ethan Wong.JPG" class="responsive-img " alt="Ethan Wong headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Ethan Wong</p>
+                        <p class="subtitle has-text-white">Social Sec</p>
+
+                        <a target="_blank" href="">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Ethan Wong.JPG"
+                          alt="Ethan Wong headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Ethan Wong</p>
+                            <p class=" subtitle has-text-white">Social Sec</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Tomisin Ajeneye.jpeg" class="responsive-img " alt="Tomisin Ajeneye headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Tomisin Ajeneye</p>
+                        <p class="subtitle has-text-white">Marketing Lead</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/tomisin-ajeneye-185335210/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Tomisin Ajeneye.jpeg"
+                          alt="Tomisin Ajeneye headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Tomisin Ajeneye</p>
+                            <p class=" subtitle has-text-white">Marketing Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/tomisin-ajeneye-185335210/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Raja.jpeg" class="responsive-img " alt="Raja Dhanda headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Raja Dhanda</p>
+                        <p class="subtitle has-text-white">Events Chief</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/ramendra-raja-dhanda/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Raja.jpeg"
+                          alt="Raja Dhanda headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Raja Dhanda</p>
+                            <p class=" subtitle has-text-white">Events Chief</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/ramendra-raja-dhanda/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Aastha Gupta.jpg" class="responsive-img " alt="Aastha Gupta headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Aastha Gupta</p>
+                        <p class="subtitle has-text-white">Events Lead</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/aastha-gupta-943145257">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Aastha Gupta.jpg"
+                          alt="Aastha Gupta headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Aastha Gupta</p>
+                            <p class=" subtitle has-text-white">Events Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/aastha-gupta-943145257">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Zahra.jpeg" class="responsive-img " alt="Zahra D'Souza headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Zahra D'Souza</p>
+                        <p class="subtitle has-text-white">Events Lead</p>
+
+                        <a target="_blank" href="https://uk.linkedin.com/in/zahra-d-souza-">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Zahra.jpeg"
+                          alt="Zahra D'Souza headshot" style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Zahra D'Souza</p>
+                            <p class=" subtitle has-text-white">Events Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://uk.linkedin.com/in/zahra-d-souza-">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Fedor Ivanov.png" class="responsive-img " alt="Fedor Ivanov headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Fedor Ivanov</p>
+                        <p class="subtitle has-text-white">Events Lead</p>
+
+                        <a target="_blank" href="linkedin.com/in/fedor-ivanov-12253021a/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Fedor Ivanov.png"
+                          alt="Fedor Ivanov headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Fedor Ivanov</p>
+                            <p class=" subtitle has-text-white">Events Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="linkedin.com/in/fedor-ivanov-12253021a/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Cameron Randhawa.png" class="responsive-img " alt="Cameron Randhawa headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Cameron Randhawa</p>
+                        <p class="subtitle has-text-white">Events Lead</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/cameron-randhawa/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Cameron Randhawa.png"
+                          alt="Cameron Randhawa headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Cameron Randhawa</p>
+                            <p class=" subtitle has-text-white">Events Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/cameron-randhawa/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Jabir Hussain.png" class="responsive-img " alt="Jabir Hussain headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Jabir Hussain</p>
+                        <p class="subtitle has-text-white">Sports Analytics Lead</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/jabir-hussain/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/j-hussain">
+                          <i class="fab fa-github card-fa has-text-white"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Jabir Hussain.png"
+                          alt="Jabir Hussain headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Jabir Hussain</p>
                             <p class=" subtitle has-text-white">Sports Analytics Lead</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/krzysztof-pietruszka-0409/">
+                              href="https://www.linkedin.com/in/jabir-hussain/">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
                             </a>
+                            <a style="position:absolute; bottom:0; left: 25vw" target="_blank"
+                            href="https://github.com/j-hussain">
+                            <i class="fab fa-github card-fa has-text-white"></i>
+                          </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Aaliya Elias .jpeg" class="responsive-img " alt="Aaliya Elias headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Aaliya Elias</p>
+                        <p class="subtitle has-text-white">Sports Analytics Team</p>
+
+                        <a target="_blank" href="linkedin.com/in/aaliya-elias">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Aaliya Elias .jpeg"
+                          alt="Aaliya Elias headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Aaliya Elias</p>
+                            <p class=" subtitle has-text-white">Sports Analytics Team</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="linkedin.com/in/aaliya-elias">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Wiktor Galecki.jpg" class="responsive-img " alt="Wiktor Galecki headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Wiktor Galecki</p>
+                        <p class="subtitle has-text-white">Sports Analytics Team</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/wiktorgalecki659/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Wiktor Galecki.jpg"
+                          alt="Wiktor Galecki headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Wiktor Galecki</p>
+                            <p class=" subtitle has-text-white">Sports Analytics Team</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/wiktorgalecki659/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
                           </div>
                         </div>
                       </article>
@@ -1195,42 +1505,125 @@
                     <div class="vertical-card card card-wdss">
                       <div class="card-image">
                         <figure class="image is-1by1">
-
-                          <img src="img/team/Alexandra.jpeg" class="responsive-img " alt="Alexandra Luca headshot">
+                          <img src="img/team/NewTeamPhotos/Joshua.jpeg" class="responsive-img " alt="Joshua Stammers headshot" style="color: antiquewhite; text-align: center;">
                         </figure>
                       </div>
                       <div class="card-content has-text-centered">
-                        <p class="title is-5 has-text-white">Alexandra Luca</p>
-                        <p class="subtitle has-text-white">Social Secretary</p>
+                        <p class="title is-4 has-text-white">Joshua Stammers</p>
+                        <p class="subtitle has-text-white">Sports Analytics Team</p>
 
-                        <a target="_blank" href="https://www.linkedin.com/in/alexandra-luca-8a31a1197/">
+                        <a target="_blank" href="https://www.linkedin.com/in/joshua-stammers-7342a8253">
                           <i class="fab fa-linkedin card-fa has-text-white"></i>
-                        </a>&nbsp;
+                        </a>
+                       
                       </div>
-
 
                     </div>
                     <div class="mobile-horizontal-card card card-wdss">
                       <article class="media">
-                        <img style="height:40vh; margin: 0;width: auto" src="img/team/Alexandra.jpeg"
-                          alt="Alexandra Luca headshot">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Joshua.jpeg"
+                          alt="Joshua Stammers headshot", style="color: antiquewhite; text-align: center;">
                         <div class="media-content ml-2 mt-2">
                           <div class="content">
-                            <p class=" title is-5 has-text-white">Alexandra Luca</p>
-                            <p class=" subtitle has-text-white">Social Secretary</p>
+                            <p class=" title is-5 has-text-white">Joshua Stammers</p>
+                            <p class=" subtitle has-text-white">Sports Analytics Team</p>
                             <a style="position:absolute; bottom:0" target="_blank"
-                              href="https://www.linkedin.com/in/alexandra-luca-8a31a1197/">
+                              href="https://www.linkedin.com/in/joshua-stammers-7342a8253">
                               <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
-                            </a>&nbsp;
+                            </a>
+                           
                           </div>
                         </div>
                       </article>
                     </div>
-
                   </li>
+
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Mahima Tendulkar.jpeg" class="responsive-img " alt="Mahima Tendulkar headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Mahima Tendulkar</p>
+                        <p class="subtitle has-text-white">Postgrad Events & Educational Lead</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/mahima-tendulkar/">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/mahimatendulkar">
+                          <i class="fab fa-github card-fa has-text-white"></i>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Mahima Tendulkar.jpeg"
+                          alt="Mahima Tendulkar headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Mahima Tendulkar</p>
+                            <p class=" subtitle has-text-white">Postgrad Events & Educational Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/mahima-tendulkar/">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                            <a style="position:absolute; bottom:0; left: 25vw" target="_blank"
+                              href="https://github.com/mahimatendulkar">
+                              <i class="fab fa-github card-fa has-text-white"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="vertical-card card card-wdss">
+                      <div class="card-image">
+                        <figure class="image is-1by1">
+                          <img src="img/team/NewTeamPhotos/Sagar Rathod.jpg" class="responsive-img " alt="Sagar Rathod headshot" style="color: antiquewhite; text-align: center;">
+                        </figure>
+                      </div>
+                      <div class="card-content has-text-centered">
+                        <p class="title is-4 has-text-white">Sagar Rathod</p>
+                        <p class="subtitle has-text-white">Postgrad Events & Educational Lead</p>
+
+                        <a target="_blank" href="https://www.linkedin.com/in/sagarrathod09">
+                          <i class="fab fa-linkedin card-fa has-text-white"></i>
+                        </a>
+                       
+                      </div>
+
+                    </div>
+                    <div class="mobile-horizontal-card card card-wdss">
+                      <article class="media">
+                        <img style="height:40vh; margin: 0;width: auto" src="img/team/NewTeamPhotos/Sagar Rathod.jpg"
+                          alt="Sagar Rathod headshot", style="color: antiquewhite; text-align: center;">
+                        <div class="media-content ml-2 mt-2">
+                          <div class="content">
+                            <p class=" title is-5 has-text-white">Sagar Rathod</p>
+                            <p class=" subtitle has-text-white">Postgrad Events & Educational Lead</p>
+                            <a style="position:absolute; bottom:0" target="_blank"
+                              href="https://www.linkedin.com/in/sagarrathod09">
+                              <i style="font-size:1.7em" class="fab fa-linkedin has-text-white"></i>
+                            </a>
+                           
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </li>
+
                 </ul>
+
               </div>
+
             </div>
+
+
             <div class="mt-3" style=" text-align:center">
               <span class="dot-team"></span>
               <span class="dot-team"></span>
@@ -1248,6 +1641,7 @@
       </div>
     </section>
 
+    <!-- fifth scrolling section of the webpage: Contact Us. This includes links to other websites about wdss and platforms. -->
     <section id="contact-section" class="ourteam-style hero  is-fullheight next">
       <div class="hero-body">
         <div class="container ">
