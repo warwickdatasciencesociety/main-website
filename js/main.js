@@ -417,10 +417,10 @@ glide.on('run.before', evt => {
 
       getPageTitle(index)
 
-      //attempt to vary the animationTime separately for the ventures page
-      var targetSection = $(".main section").eq(index-1);
-      var venturesSection = $("#ventures");
-      var animationTime = (venturesSection.is(targetSection)) ? 11000 : 750;
+      // //attempt to vary the animationTime separately for the ventures page
+      // var targetSection = $(".main section").eq(index-1);
+      // var venturesSection = $("#ventures");
+      // var animationTime = (venturesSection.is(targetSection)) ? 11000 : 750;
 
       if ($(".curr-title").text() != "Our Team") {
         glide.pause();
@@ -433,20 +433,20 @@ glide.on('run.before', evt => {
 
       }  
       
-      if (index == "2" && !flag) {
-      animateCSS('#research-tile-image', 'fadeInLeft');
-      animateCSS('#teaching-tile-image', 'fadeInRight');
-      animateCSS('#podcast-tile-image', 'fadeInLeft');
-      animateCSS('#careers-tile-image', 'fadeInUp');
-      animateCSS('#social-good-tile-image', 'fadeInRight');
-      flag = true;
-      }
+      // if (index == "2" && !flag) {
+      // animateCSS('#research-tile-image', 'fadeInLeft');
+      // animateCSS('#teaching-tile-image', 'fadeInRight');
+      // animateCSS('#podcast-tile-image', 'fadeInLeft');
+      // animateCSS('#careers-tile-image', 'fadeInUp');
+      // animateCSS('#social-good-tile-image', 'fadeInRight');
+      // flag = true;
+      // }
       $(".active_menu").toggleClass("active_menu");
       if ($(".dropdown-content2").is(":visible")) {
         $(".dropdown-content2").slideUp(200);
       }
-      console.log(animationTime)
-      return animationTime;
+      // console.log(animationTime)
+      // return animationTime;
 
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) { 
